@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\LumberStoreSystem.API.props" />
-</Project>

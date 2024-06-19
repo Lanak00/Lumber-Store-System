@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using LumberStoreSystem.DataAccess;
+using Microsoft.AspNetCore.Connections;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<LumberStoreSystemDbContext>();
+
 
 var app = builder.Build();
 
