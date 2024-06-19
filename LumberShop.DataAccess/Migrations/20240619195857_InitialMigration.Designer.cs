@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LumberStoreSystem.DataAccess.Migrations
 {
     [DbContext(typeof(LumberStoreSystemDbContext))]
-    [Migration("20240619163825_InitialMigration")]
+    [Migration("20240619195857_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -58,12 +58,15 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("CuttingLists");
                 });
@@ -147,8 +150,9 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -161,22 +165,19 @@ namespace LumberStoreSystem.DataAccess.Migrations
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Product", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("Id")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("DimensionId")
                         .HasColumnType("int");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Manufacturer")
@@ -232,9 +233,6 @@ namespace LumberStoreSystem.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("AddressId");
@@ -256,8 +254,10 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.HasBaseType("LumberStoreSystem.DataAccess.Model.User");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.Property<string>("UMCN")
                         .IsRequired()
@@ -273,6 +273,14 @@ namespace LumberStoreSystem.DataAccess.Migrations
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("LumberStoreSystem.DataAccess.Model.Product", "Product")
+                        .WithMany("cuttingLists")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.CuttingListItem", b =>
@@ -380,6 +388,8 @@ namespace LumberStoreSystem.DataAccess.Migrations
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Product", b =>
                 {
+                    b.Navigation("cuttingLists");
+
                     b.Navigation("orderItems");
                 });
 

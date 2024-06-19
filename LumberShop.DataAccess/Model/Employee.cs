@@ -12,7 +12,7 @@ namespace LumberStoreSystem.DataAccess.Model
     public class Employee : User
     {
         public string UMCN { get; set; }
-        public string Image { get; set; } 
+        public string? Image { get; set; } = null;
         public EmployeeRole Role { get; set; }
     }
 
