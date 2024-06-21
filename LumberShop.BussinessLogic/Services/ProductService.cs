@@ -1,4 +1,5 @@
-﻿using LumberStoreSystem.DataAccess.Model;
+﻿using LumberStoreSystem.Contracts;
+using LumberStoreSystem.DataAccess.Model;
 using LumberStoreSystem.DataAccess.Repository;
 using System;
 using System.Collections.Generic;
@@ -17,8 +18,20 @@ namespace LumberStoreSystem.BussinessLogic.Services
             _productRepository = productRepository;
         }
 
-        public async Task Add(Product product)
+        public async Task Add(ProductDTO productDTO)
         {
+            var product = new Product
+            {
+                Id = productDTO.Id,
+                Name = productDTO.Name,
+                Description = productDTO.Description,
+                Category = productDTO.Category,
+                Manufacturer = productDTO.Manufacturer,
+                Unit = productDTO.Unit,
+                Price = productDTO.Price,
+                Image = productDTO.Image,
+                DimensionId = productDTO.DimensionId
+            };
             await _productRepository.Add(product);
         }
 
@@ -38,8 +51,20 @@ namespace LumberStoreSystem.BussinessLogic.Services
             return await _productRepository.GetById(id);
         }
 
-        public async Task Update(Product product)
+        public async Task Update(ProductDTO productDTO)
         {
+            var product = new Product
+            {
+                Id= productDTO.Id,
+                Name = productDTO.Name,
+                Description = productDTO.Description,
+                Category = productDTO.Category,
+                Manufacturer = productDTO.Manufacturer,
+                Unit = productDTO.Unit,
+                Price = productDTO.Price,
+                Image = productDTO.Image,
+                DimensionId = productDTO.DimensionId
+            };
             await _productRepository.Update(product);
         }
     }

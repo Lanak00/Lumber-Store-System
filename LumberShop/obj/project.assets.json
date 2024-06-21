@@ -359,6 +359,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "LumberStoreSystem.Contracts": "1.0.0",
           "LumberStoreSystem.DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.0"
         },
@@ -367,6 +368,19 @@
         },
         "runtime": {
           "bin/placeholder/LumberStoreSystem.BussinessLogic.dll": {}
+        }
+      },
+      "LumberStoreSystem.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LumberStoreSystem.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LumberStoreSystem.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LumberStoreSystem.Contracts.dll": {}
         }
       },
       "LumberStoreSystem.DataAccess/1.0.0": {
@@ -1157,6 +1171,11 @@
       "path": "../LumberShop.BussinessLogic/LumberStoreSystem.BussinessLogic.csproj",
       "msbuildProject": "../LumberShop.BussinessLogic/LumberStoreSystem.BussinessLogic.csproj"
     },
+    "LumberStoreSystem.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../LumberStoreSystem.Contracts/LumberStoreSystem.Contracts.csproj",
+      "msbuildProject": "../LumberStoreSystem.Contracts/LumberStoreSystem.Contracts.csproj"
+    },
     "LumberStoreSystem.DataAccess/1.0.0": {
       "type": "project",
       "path": "../LumberShop.DataAccess/LumberStoreSystem.DataAccess.csproj",
@@ -1166,6 +1185,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "LumberStoreSystem.BussinessLogic >= 1.0.0",
+      "LumberStoreSystem.Contracts >= 1.0.0",
       "LumberStoreSystem.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -1203,6 +1223,9 @@
             },
             "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj": {
               "projectPath": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj"
+            },
+            "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj": {
+              "projectPath": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj"
             }
           }
         }

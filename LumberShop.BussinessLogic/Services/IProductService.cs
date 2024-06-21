@@ -1,10 +1,5 @@
 ﻿using LumberStoreSystem.DataAccess.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using LumberStoreSystem.Contracts;
 
 namespace LumberStoreSystem.BussinessLogic.Services
 {
@@ -12,8 +7,8 @@ namespace LumberStoreSystem.BussinessLogic.Services
     {
         Task<IEnumerable<Product>> GetAll();
         Task<Product> GetById(string id);
-        Task Add(Product product);
-        Task Update(Product product);
+        Task Add(ProductDTO product);
+        Task Update(ProductDTO product);
         Task Delete(string id);
     }
 }

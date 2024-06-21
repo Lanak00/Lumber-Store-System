@@ -99,7 +99,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Height")
+                    b.Property<int?>("Height")
                         .HasColumnType("int");
 
                     b.Property<int>("Length")

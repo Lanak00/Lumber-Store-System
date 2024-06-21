@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LumberStoreSystem.DataAccess.Migrations
 {
     [DbContext(typeof(LumberStoreSystemDbContext))]
-    [Migration("20240619195857_InitialMigration")]
+    [Migration("20240621150606_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -102,7 +102,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Height")
+                    b.Property<int?>("Height")
                         .HasColumnType("int");
 
                     b.Property<int>("Length")

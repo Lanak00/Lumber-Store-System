@@ -44,7 +44,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Length = table.Column<int>(type: "int", nullable: false),
                     Width = table.Column<int>(type: "int", nullable: false),
-                    Height = table.Column<int>(type: "int", nullable: false)
+                    Height = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {

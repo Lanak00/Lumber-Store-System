@@ -1,6 +1,7 @@
 ﻿using LumberStoreSystem.BussinessLogic.Services;
 using LumberStoreSystem.DataAccess.Model;
 using Microsoft.AspNetCore.Mvc;
+using LumberStoreSystem.Contracts;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -54,7 +55,7 @@ namespace LumberStoreSystem.API.Controllers
 
         // POST api/<ProductsController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Product product)
+        public async Task<IActionResult> Post([FromBody] ProductDTO product)
         {
             try
             {
@@ -69,7 +70,7 @@ namespace LumberStoreSystem.API.Controllers
 
         // PUT api/<ProductsController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put([FromBody] Product product)
+        public async Task<IActionResult> Put([FromBody] ProductDTO product)
         {
             try
             {

@@ -14,8 +14,12 @@ C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\Pomel
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.BussinessLogic.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.Contracts.dll
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.DataAccess.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.BussinessLogic.pdb
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.DataAccess.pdb
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.Contracts.pdb
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.csproj.AssemblyReference.cache
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.AssemblyInfoInputs.cache
@@ -38,5 +42,3 @@ C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\refin
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.pdb
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.genruntimeconfig.cache
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\ref\LumberStoreSystem.API.dll
-C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.BussinessLogic.dll
-C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.BussinessLogic.pdb
