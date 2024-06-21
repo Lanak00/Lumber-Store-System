@@ -21,7 +21,7 @@ namespace LumberStoreSystem.DataAccess
         public DbSet<CuttingListItem> CuttingListItems { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Dimension> Dimensions { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.LogTo(Console.WriteLine);
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("Users");

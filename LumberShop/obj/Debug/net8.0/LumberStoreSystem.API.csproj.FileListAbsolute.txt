@@ -38,3 +38,5 @@ C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\refin
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.pdb
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\LumberStoreSystem.API.genruntimeconfig.cache
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\obj\Debug\net8.0\ref\LumberStoreSystem.API.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.BussinessLogic.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop\bin\Debug\net8.0\LumberStoreSystem.BussinessLogic.pdb

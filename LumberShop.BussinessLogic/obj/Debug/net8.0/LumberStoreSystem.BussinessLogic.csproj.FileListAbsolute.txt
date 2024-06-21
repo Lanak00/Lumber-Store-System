@@ -11,3 +11,6 @@ C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\obj\Deb
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\obj\Debug\net8.0\refint\LumberStoreSystem.BussinessLogic.dll
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\obj\Debug\net8.0\LumberStoreSystem.BussinessLogic.pdb
 C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\obj\Debug\net8.0\ref\LumberStoreSystem.BussinessLogic.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\bin\Debug\net8.0\LumberStoreSystem.DataAccess.dll
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\bin\Debug\net8.0\LumberStoreSystem.DataAccess.pdb
+C:\Users\kovac_impo9dd\source\repos\LumberShop\LumberShop.BussinessLogic\obj\Debug\net8.0\LumberSt.0D75B44B.Up2Date
