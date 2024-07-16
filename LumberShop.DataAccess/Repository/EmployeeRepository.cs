@@ -9,40 +9,38 @@ using System.Threading.Tasks;
 
 namespace LumberStoreSystem.DataAccess.Repository
 {
-    public class ProductRepository : IProductRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
         private readonly LumberStoreSystemDbContext _context;
-
-        public ProductRepository(LumberStoreSystemDbContext context)
+        public EmployeeRepository(LumberStoreSystemDbContext context)
         {
             _context = context;
         }
-
-        public async Task Add(Product product)
+        public async Task Add(Employee employee)
         {
-            _context.Products.Add(product);
+            _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(Product product)
+        public async Task Delete(Employee employee)
         {
-            _context.Products.Remove(product);
+            _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Product>> GetAll()
+        public async Task<IEnumerable<Employee>> GetAll()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Employees.ToListAsync();
         }
 
-        public async Task<Product> GetById(string id)
+        public async Task<Employee> GetById(int id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _context.Employees.FindAsync(id);
         }
 
-        public async Task Update(Product product)
+        public async Task Update(Employee employee)
         {
-            _context.Products.Update(product);
+            _context.Employees.Update(employee);
             await _context.SaveChangesAsync();
         }
     }

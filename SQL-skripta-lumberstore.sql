@@ -1,15 +1,16 @@
 INSERT INTO Addresses
-VALUES (1, "Blagoja Parovica", 92, "Gajdobra", "Srbija");
+VALUES 	(1, "Kisacka", 27, "Novi Sad", "Srbija"),
+		(2, "Blagoja Parovica", 93, "Gajdobra", "Srbija");
 
 INSERT INTO Users 
-VALUES (1, "Lana", "Kovacevic", "kovaceviclana2501@gmail.com", "pass123", "2000-01-25", "0604706707", 1),
-	   (2, "Nemanja", "Kovacevic", "kovacevicnemanja1997@gmail.com", "pass123", "1997-05-21", "0656684150", 1);
+VALUES (1, "Lana", "Kovacevic", "kovaceviclana2501@gmail.com", "pass123", "2000-01-25", "0604706707", 1, 0),
+	   (2, "Nemanja", "Kovacevic", "kovacevicnemanja1997@gmail.com", "pass123", "1997-05-21", "0656684150", 1, 1);
 
 INSERT INTO Clients
-VALUES (1);
+VALUES (2);
 
 INSERT INTO Employees
-VALUES (2, "2105999805021", "https://cdn-icons-png.flaticon.com/512/219/219970.png", 0);
+VALUES (1, "2105999805021", "https://cdn-icons-png.flaticon.com/512/219/219970.png", 0);
 
 INSERT INTO Dimensions
 VALUES (1, 200, 80, 5),
@@ -26,9 +27,9 @@ VALUES ("A954 MN", "Bela Iverica", "", 0, "Arcus", 0, 2000, "https://www.darexho
        ("H445 NH", "Crni Hrast - Oplemenjena Iverica", "", 0, "Arcus", 0, 2800, "https://www.arcus.rs/wp-content/uploads/2018/12/H1199ST24.jpg", 1);
        
 INSERT INTO Orders
-VALUES (1, "2024-06-19", 0, 1),
-	   (2, "2024-06-17", 0, 1),
-       (3, "2024-03-15", 1, 1);
+VALUES (1, "2024-06-19", 0, 2),
+	   (2, "2024-06-17", 0, 2),
+       (3, "2024-03-15", 1, 2);
        
 INSERT INTO Orderitems
 VALUES (9, 20, 3, "A954 MN"),

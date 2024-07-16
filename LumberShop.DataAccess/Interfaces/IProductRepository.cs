@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LumberStoreSystem.DataAccess.Repository
+namespace LumberStoreSystem.DataAccess.Interfaces
 {
     public interface IProductRepository
     {

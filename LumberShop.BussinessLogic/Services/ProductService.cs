@@ -1,6 +1,7 @@
-﻿using LumberStoreSystem.Contracts;
+﻿using LumberStoreSystem.BussinessLogic.Interfaces;
+using LumberStoreSystem.Contracts;
+using LumberStoreSystem.DataAccess.Interfaces;
 using LumberStoreSystem.DataAccess.Model;
-using LumberStoreSystem.DataAccess.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;

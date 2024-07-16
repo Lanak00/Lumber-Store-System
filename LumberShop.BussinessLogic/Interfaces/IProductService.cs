@@ -1,7 +1,7 @@
 ﻿using LumberStoreSystem.DataAccess.Model;
 using LumberStoreSystem.Contracts;
 
-namespace LumberStoreSystem.BussinessLogic.Services
+namespace LumberStoreSystem.BussinessLogic.Interfaces
 {
     public interface IProductService
     {

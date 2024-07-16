@@ -1,11 +1,13 @@
 ﻿using LumberStoreSystem.DataAccess.Model.Enummerations;
-using System.Diagnostics.Contracts;
-using System.Numerics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace LumberStoreSystem.DataAccess.Model
+namespace LumberStoreSystem.Contracts
 {
-
-    public class User
+    public class EmployeeDTO
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -14,8 +16,9 @@ namespace LumberStoreSystem.DataAccess.Model
         public string Password { get; set; }
         public DateOnly DateOfBirth { get; set; }
         public string PhoneNumber { get; set; }
-        public Address Address { get; set; }
         public int AddressId { get; set; }
-        public UserRole UserRole { get; set; }
+        public string UMCN { get; set; }
+        public string? Image { get; set; } = null;
+        public EmployeeRole Role { get; set; }
     }
 }

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LumberStoreSystem.DataAccess.Migrations
 {
     [DbContext(typeof(LumberStoreSystemDbContext))]
-    [Migration("20240621150606_InitialMigration")]
+    [Migration("20240716190620_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -232,6 +232,9 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("UserRole")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

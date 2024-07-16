@@ -1,7 +1,7 @@
-﻿using LumberStoreSystem.BussinessLogic.Services;
-using LumberStoreSystem.DataAccess.Model;
+﻿using LumberStoreSystem.DataAccess.Model;
 using Microsoft.AspNetCore.Mvc;
 using LumberStoreSystem.Contracts;
+using LumberStoreSystem.BussinessLogic.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

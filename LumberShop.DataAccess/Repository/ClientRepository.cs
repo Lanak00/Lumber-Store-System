@@ -9,40 +9,38 @@ using System.Threading.Tasks;
 
 namespace LumberStoreSystem.DataAccess.Repository
 {
-    public class ProductRepository : IProductRepository
+    public class ClientRepository : IClientRepository
     {
         private readonly LumberStoreSystemDbContext _context;
-
-        public ProductRepository(LumberStoreSystemDbContext context)
+        public ClientRepository(LumberStoreSystemDbContext context)
         {
             _context = context;
         }
-
-        public async Task Add(Product product)
+        public async Task Add(Client client)
         {
-            _context.Products.Add(product);
+            _context.Clients.Add(client);
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(Product product)
+        public async Task Delete(Client client)
         {
-            _context.Products.Remove(product);
+            _context.Clients.Remove(client);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Product>> GetAll()
+        public async Task<IEnumerable<Client>> GetAll()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Clients.ToListAsync();
         }
 
-        public async Task<Product> GetById(string id)
+        public async Task<Client> GetById(int id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _context.Clients.FindAsync(id);
         }
 
-        public async Task Update(Product product)
+        public async Task Update(Client client)
         {
-            _context.Products.Update(product);
+            _context.Clients.Update(client);
             await _context.SaveChangesAsync();
         }
     }
