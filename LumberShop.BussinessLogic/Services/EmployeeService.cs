@@ -18,7 +18,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
         {
             _employeeRepository = employeeRepository;
         }
-        public async Task Add(EmployeeDTO employeeDTO)
+        public async Task Add(NewEmployeeDTO employeeDTO)
         {
             var employee = new Employee
             {

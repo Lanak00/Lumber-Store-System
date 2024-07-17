@@ -18,8 +18,8 @@ namespace LumberStoreSystem.DataAccess.Model
         public MeasureUnit Unit { get; set; }
         public int Price { get; set; }
         public string? Image { get; set; } = null;
-        public Dimension Dimension { get; set; }
-        public int DimensionId { get; set; }
+        public Dimensions Dimensions { get; set; }
+        public int DimensionsId { get; set; }
         public IEnumerable<OrderItem> orderItems { get; set; }
         public IEnumerable<CuttingList> cuttingLists { get; set; }
     }

@@ -13,7 +13,6 @@ namespace LumberStoreSystem.BussinessLogic.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
-
         public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
@@ -31,7 +30,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
                 Unit = productDTO.Unit,
                 Price = productDTO.Price,
                 Image = productDTO.Image,
-                DimensionId = productDTO.DimensionId
+                DimensionsId = productDTO.DimensionsId,
             };
             await _productRepository.Add(product);
         }
@@ -44,7 +43,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
 
         public async Task<IEnumerable<Product>> GetAll()
         {
-            return await _productRepository.GetAll();
+            return await _productRepository.GetAll();           
         }
 
         public async Task<Product> GetById(string id)
@@ -64,7 +63,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
                 Unit = productDTO.Unit,
                 Price = productDTO.Price,
                 Image = productDTO.Image,
-                DimensionId = productDTO.DimensionId
+                DimensionsId = productDTO.DimensionsId
             };
             await _productRepository.Update(product);
         }

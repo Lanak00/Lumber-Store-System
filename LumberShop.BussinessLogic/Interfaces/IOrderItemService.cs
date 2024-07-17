@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace LumberStoreSystem.BussinessLogic.Interfaces
 {
-    public interface IEmployeeService
+    public interface IOrderItemService
     {
-        Task<IEnumerable<Employee>> GetAll();
-        Task<Employee> GetById(int id);
-        Task Add(NewEmployeeDTO user);
-        Task Update(EmployeeDTO user);
+        Task<IEnumerable<OrderItemDTO>> GetByOrderId(int orderId);
+        Task<OrderItemDTO> GetById(int id);
+        Task Add(NewOrderItemDTO orderItem);
+        Task Update(OrderItemDTO orderItem);
         Task Delete(int id);
     }
 }

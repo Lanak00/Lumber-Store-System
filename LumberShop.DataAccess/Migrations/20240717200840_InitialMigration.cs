@@ -101,14 +101,14 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     Price = table.Column<int>(type: "int", nullable: false),
                     Image = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    DimensionId = table.Column<int>(type: "int", nullable: false)
+                    DimensionsId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_Dimensions_DimensionId",
-                        column: x => x.DimensionId,
+                        name: "FK_Products_Dimensions_DimensionsId",
+                        column: x => x.DimensionsId,
                         principalTable: "Dimensions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -289,9 +289,9 @@ namespace LumberStoreSystem.DataAccess.Migrations
                 column: "ClientId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_DimensionId",
+                name: "IX_Products_DimensionsId",
                 table: "Products",
-                column: "DimensionId");
+                column: "DimensionsId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_AddressId",

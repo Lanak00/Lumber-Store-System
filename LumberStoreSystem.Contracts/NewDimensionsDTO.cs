@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LumberStoreSystem.DataAccess.Model
+namespace LumberStoreSystem.Contracts
 {
-    public class Dimension
-    { 
-        public int Id { get; set; }
+    public class NewDimensionsDTO
+    {
         public int Length { get; set; }
         public int Width { get; set; }
         public int? Height { get; set; }
-        public IEnumerable<Product> products { get; set; }  = Enumerable.Empty<Product>();
     }
 }

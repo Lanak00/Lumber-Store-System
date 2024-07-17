@@ -26,11 +26,17 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddScoped<IAddressRepository, AddressRepository>();
+builder.Services.AddScoped<IDimensionsRepository, DimensionsRepository>();
+builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
 
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<IAddressService, AddressService>();
+builder.Services.AddScoped<IDimensionsService, DimensionsService>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 
 var app = builder.Build();
 

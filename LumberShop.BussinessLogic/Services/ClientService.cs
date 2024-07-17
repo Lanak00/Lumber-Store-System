@@ -17,7 +17,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
         {
             _clientRepository = clientRepository;
         }
-        public async Task Add(ClientDTO clientDTO)
+        public async Task Add(NewClientDTO clientDTO)
         {
             var client = new Client
             {

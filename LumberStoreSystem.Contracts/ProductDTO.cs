@@ -12,6 +12,6 @@ namespace LumberStoreSystem.Contracts
         public MeasureUnit Unit { get; set; }
         public int Price { get; set; }
         public string? Image { get; set; }
-        public int DimensionId { get; set; }
+        public int DimensionsId { get; set; }
     }
 }

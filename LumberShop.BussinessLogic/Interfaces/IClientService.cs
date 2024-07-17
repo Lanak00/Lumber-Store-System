@@ -12,7 +12,7 @@ namespace LumberStoreSystem.BussinessLogic.Interfaces
     {
         Task<IEnumerable<Client>> GetAll();
         Task<Client> GetById(int id);
-        Task Add(ClientDTO user);
+        Task Add(NewClientDTO user);
         Task Update(ClientDTO user);
         Task Delete(int id);
     }

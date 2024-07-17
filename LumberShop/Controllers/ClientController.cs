@@ -52,7 +52,7 @@ namespace LumberStoreSystem.API.Controllers
 
         // POST api/<EmployeeController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ClientDTO client)
+        public async Task<IActionResult> Post([FromBody] NewClientDTO client)
         {
             try
             {

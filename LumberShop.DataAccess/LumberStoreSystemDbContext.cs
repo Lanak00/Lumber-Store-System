@@ -20,7 +20,7 @@ namespace LumberStoreSystem.DataAccess
         public DbSet<CuttingList> CuttingLists { get; set; }
         public DbSet<CuttingListItem> CuttingListItems { get; set; }
         public DbSet<Address> Addresses { get; set; }
-        public DbSet<Dimension> Dimensions { get; set; }
+        public DbSet<Dimensions> Dimensions { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,9 +34,9 @@ namespace LumberStoreSystem.DataAccess
             .HasForeignKey(e => e.AddressId);
 
             modelBuilder.Entity<Product>()
-           .HasOne(e => e.Dimension)
+           .HasOne(e => e.Dimensions)
            .WithMany(e => e.products)
-           .HasForeignKey(e => e.DimensionId);
+           .HasForeignKey(e => e.DimensionsId);
 
             modelBuilder.Entity<OrderItem>()
            .HasOne(e => e.Order)

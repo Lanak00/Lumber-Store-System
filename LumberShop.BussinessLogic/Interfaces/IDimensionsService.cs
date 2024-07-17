@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace LumberStoreSystem.BussinessLogic.Interfaces
 {
-    public interface IEmployeeService
+    public interface IDimensionsService
     {
-        Task<IEnumerable<Employee>> GetAll();
-        Task<Employee> GetById(int id);
-        Task Add(NewEmployeeDTO user);
-        Task Update(EmployeeDTO user);
+        Task<IEnumerable<Dimensions>> GetAll();
+        Task<int?> FindByAll(DimensionsDTO dimensions);
+        Task<Dimensions> GetById(int id);
+        Task<int> Add(NewDimensionsDTO dimensions);
         Task Delete(int id);
     }
 }

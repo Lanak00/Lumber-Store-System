@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LumberStoreSystem.DataAccess.Migrations
 {
     [DbContext(typeof(LumberStoreSystemDbContext))]
-    [Migration("20240716190620_InitialMigration")]
+    [Migration("20240717200840_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -96,7 +96,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.ToTable("CuttingListItems");
                 });
 
-            modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Dimension", b =>
+            modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Dimensions", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -174,7 +174,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("DimensionId")
+                    b.Property<int>("DimensionsId")
                         .HasColumnType("int");
 
                     b.Property<string>("Image")
@@ -196,7 +196,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DimensionId");
+                    b.HasIndex("DimensionsId");
 
                     b.ToTable("Products");
                 });
@@ -329,13 +329,13 @@ namespace LumberStoreSystem.DataAccess.Migrations
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Product", b =>
                 {
-                    b.HasOne("LumberStoreSystem.DataAccess.Model.Dimension", "Dimension")
+                    b.HasOne("LumberStoreSystem.DataAccess.Model.Dimensions", "Dimensions")
                         .WithMany("products")
-                        .HasForeignKey("DimensionId")
+                        .HasForeignKey("DimensionsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Dimension");
+                    b.Navigation("Dimensions");
                 });
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.User", b =>
@@ -377,7 +377,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Navigation("cuttingListItems");
                 });
 
-            modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Dimension", b =>
+            modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Dimensions", b =>
                 {
                     b.Navigation("products");
                 });
