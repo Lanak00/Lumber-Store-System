@@ -32,12 +32,14 @@ namespace LumberStoreSystem.DataAccess.Repository
 
         public async Task<IEnumerable<Product>> GetAll()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Products.Include(p => p.Dimensions).ToListAsync();
         }
 
         public async Task<Product> GetById(string id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _context.Products
+                .Include(p => p.Dimensions)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task Update(Product product)

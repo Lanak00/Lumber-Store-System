@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,5 @@ namespace LumberStoreSystem.DataAccess.Model
         public string Number { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public IEnumerable<User> users { get; set; }
     }
 }

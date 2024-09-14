@@ -12,6 +12,5 @@ namespace LumberStoreSystem.DataAccess.Model
         public int Length { get; set; }
         public int Width { get; set; }
         public int? Height { get; set; }
-        public IEnumerable<Product> products { get; set; }  = Enumerable.Empty<Product>();
     }
 }

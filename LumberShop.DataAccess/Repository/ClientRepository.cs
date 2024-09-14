@@ -30,12 +30,12 @@ namespace LumberStoreSystem.DataAccess.Repository
 
         public async Task<IEnumerable<Client>> GetAll()
         {
-            return await _context.Clients.ToListAsync();
+            return await _context.Clients.Include(c => c.Address).ToListAsync();
         }
 
         public async Task<Client> GetById(int id)
         {
-            return await _context.Clients.FindAsync(id);
+            return await _context.Clients.Include(u => u.Address).FirstOrDefaultAsync(u => u.Id == id);
         }
 
         public async Task Update(Client client)

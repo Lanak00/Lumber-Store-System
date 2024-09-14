@@ -87,7 +87,6 @@ namespace LumberStoreSystem.BussinessLogic.Services
 
                 orderItemDTOs.Add(orderItemDTO);
             }
-
             return orderItemDTOs;
         }
     }

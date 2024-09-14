@@ -20,7 +20,7 @@ namespace LumberStoreSystem.DataAccess.Model
         public string? Image { get; set; } = null;
         public Dimensions Dimensions { get; set; }
         public int DimensionsId { get; set; }
-        public IEnumerable<OrderItem> orderItems { get; set; }
-        public IEnumerable<CuttingList> cuttingLists { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<CuttingList> CuttingLists { get; set; }
     }
 }

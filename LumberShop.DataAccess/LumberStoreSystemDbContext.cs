@@ -30,27 +30,27 @@ namespace LumberStoreSystem.DataAccess
 
             modelBuilder.Entity<User>()
             .HasOne(e => e.Address)
-            .WithMany(e => e.users)
+            .WithMany()
             .HasForeignKey(e => e.AddressId);
 
             modelBuilder.Entity<Product>()
            .HasOne(e => e.Dimensions)
-           .WithMany(e => e.products)
+           .WithMany()
            .HasForeignKey(e => e.DimensionsId);
 
             modelBuilder.Entity<OrderItem>()
-           .HasOne(e => e.Order)
-           .WithMany(e => e.items)
-           .HasForeignKey(e => e.OrderId);
-
-            modelBuilder.Entity<OrderItem>()
             .HasOne(e => e.Product)
-            .WithMany(e => e.orderItems)
+            .WithMany(e => e.OrderItems)
             .HasForeignKey(e => e.ProductId);
 
             modelBuilder.Entity<Order>()
+            .HasMany(o => o.Items)
+            .WithOne()
+            .HasForeignKey(oi => oi.OrderId);
+
+            modelBuilder.Entity<Order>()
             .HasOne(e => e.Client)
-            .WithMany(e => e.orders)
+            .WithMany(e => e.Orders)
             .HasForeignKey(e => e.ClientId);
 
             modelBuilder.Entity<CuttingListItem>()

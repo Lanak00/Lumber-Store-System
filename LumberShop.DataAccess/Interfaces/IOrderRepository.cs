@@ -10,7 +10,8 @@ namespace LumberStoreSystem.DataAccess.Interfaces
     public interface IOrderRepository
     {
         Task<IEnumerable<Order>> GetAll();
-        Task<Order> GetById(string id); 
+        Task<Order> GetById(int id);
+        Task<IEnumerable<Order>> GetByClientId(int clientId);
         Task Add(Order order);
         Task Update(Order order);
         Task Delete(Order order);

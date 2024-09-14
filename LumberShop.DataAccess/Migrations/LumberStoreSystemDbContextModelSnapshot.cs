@@ -269,13 +269,13 @@ namespace LumberStoreSystem.DataAccess.Migrations
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.CuttingList", b =>
                 {
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Order", null)
-                        .WithMany("cuttingLists")
+                        .WithMany("CuttingLists")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Product", "Product")
-                        .WithMany("cuttingLists")
+                        .WithMany("CuttingLists")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -297,7 +297,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Order", b =>
                 {
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Client", "Client")
-                        .WithMany("orders")
+                        .WithMany("Orders")
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -307,19 +307,17 @@ namespace LumberStoreSystem.DataAccess.Migrations
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.OrderItem", b =>
                 {
-                    b.HasOne("LumberStoreSystem.DataAccess.Model.Order", "Order")
-                        .WithMany("items")
+                    b.HasOne("LumberStoreSystem.DataAccess.Model.Order", null)
+                        .WithMany("Items")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Product", "Product")
-                        .WithMany("orderItems")
+                        .WithMany("OrderItems")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Order");
 
                     b.Navigation("Product");
                 });
@@ -327,7 +325,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Product", b =>
                 {
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Dimensions", "Dimensions")
-                        .WithMany("products")
+                        .WithMany()
                         .HasForeignKey("DimensionsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -338,7 +336,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.User", b =>
                 {
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Address", "Address")
-                        .WithMany("users")
+                        .WithMany("Users")
                         .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -366,7 +364,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Address", b =>
                 {
-                    b.Navigation("users");
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.CuttingList", b =>
@@ -374,28 +372,23 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Navigation("cuttingListItems");
                 });
 
-            modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Dimensions", b =>
-                {
-                    b.Navigation("products");
-                });
-
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Order", b =>
                 {
-                    b.Navigation("cuttingLists");
+                    b.Navigation("CuttingLists");
 
-                    b.Navigation("items");
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Product", b =>
                 {
-                    b.Navigation("cuttingLists");
+                    b.Navigation("CuttingLists");
 
-                    b.Navigation("orderItems");
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Client", b =>
                 {
-                    b.Navigation("orders");
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

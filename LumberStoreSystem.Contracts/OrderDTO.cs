@@ -10,6 +10,7 @@ namespace LumberStoreSystem.Contracts
 {
     public class OrderDTO
     {
+        public int Id { get; set; }
         public DateOnly Date { get; set; }
         public OrderStatus Status { get; set; }
         public int ClientId { get; set; }

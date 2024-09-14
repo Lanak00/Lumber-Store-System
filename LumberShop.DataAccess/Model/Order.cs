@@ -14,7 +14,7 @@ namespace LumberStoreSystem.DataAccess.Model
         public OrderStatus Status { get; set; }
         public Client Client { get; set; }
         public int ClientId { get; set; }
-        public IEnumerable<OrderItem> items { get; set;} = Enumerable.Empty<OrderItem>();
-        public IEnumerable<CuttingList> cuttingLists { get; set; } = Enumerable.Empty<CuttingList>();
+        public ICollection<OrderItem> Items { get; set;} = new List<OrderItem>();
+        public ICollection<CuttingList> CuttingLists { get; set; } = new List<CuttingList>();
     }
 }

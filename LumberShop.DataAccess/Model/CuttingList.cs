@@ -10,8 +10,8 @@ namespace LumberStoreSystem.DataAccess.Model
     {
         public int Id { get; set; }
         public string ProductId { get; set; }
-        public Product Product { get; set; }
+        public Product Product { get; set; } 
         public int OrderId { get; set; }
-        public IEnumerable<CuttingListItem> cuttingListItems { get; set; } = Enumerable.Empty<CuttingListItem>();
+        public ICollection<CuttingListItem> cuttingListItems { get; set; } = new List<CuttingListItem>();
     }
 }
