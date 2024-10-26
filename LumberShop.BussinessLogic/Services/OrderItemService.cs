@@ -28,7 +28,6 @@ namespace LumberStoreSystem.BussinessLogic.Services
             {
                 Id = new int(),
                 Amount = orderItemDTO.Amount,
-                OrderId = orderItemDTO.OrderId,
                 ProductId = orderItemDTO.ProductId,
             };
             await _orderItemRepository.Add(orderItem);

@@ -43,5 +43,12 @@ namespace LumberStoreSystem.DataAccess.Repository
             _context.Users.Update(user);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<User> GetUserByUsername(string username)
+        {
+            return await _context.Users
+                .Include(u => u.Address) 
+                .FirstOrDefaultAsync(u => u.Email == username);
+        }
     }
 }

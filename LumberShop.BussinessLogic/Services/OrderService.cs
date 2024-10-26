@@ -24,12 +24,30 @@ namespace LumberStoreSystem.BussinessLogic.Services
         {
             var order = new Order
             {
-                Id = new int(),
                 ClientId = orderDTO.ClientId,
                 Date = orderDTO.Date,
                 Status = DataAccess.Model.Enummerations.OrderStatus.active,
-                //add list of items here by inserting them 
+                Items = orderDTO.Items.Select(item => new OrderItem
+                {
+                    ProductId = item.ProductId,
+                    Amount = item.Amount,
+                }).ToList()
             };
+
+            // Add cutting lists to the order
+            var cuttingLists = orderDTO.CuttingLists.Select(cl => new CuttingList
+            {
+                ProductId = cl.ProductId,
+                cuttingListItems = cl.Items.Select(cli => new CuttingListItem
+                {
+                    Length = cli.Length,
+                    Width = cli.Width,
+                    Amount = cli.Amount,
+                }).ToList()
+            }).ToList();
+
+            order.CuttingLists = cuttingLists;
+
             await _orderRepository.Add(order);
         }
 

@@ -3,128 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\enummerations\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\enummerations\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|solutionrelative:lumbershop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.bussinesslogic\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|solutionrelative:lumbershop.bussinesslogic\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\neworderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\neworderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|solutionrelative:lumbershop\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|solutionrelative:lumbershop\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\newcuttinglistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\newcuttinglistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\neworderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\neworderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\lumberstoresystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\lumberstoresystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827195415_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LumberShop.DataAccess\\Migrations\\20240827195415_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\dimensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\dimensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\cuttinglistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\cuttinglistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\cuttinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\cuttinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\newcuttinglistitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\newcuttinglistitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\neworderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\neworderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827185220_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LumberShop.DataAccess\\Migrations\\20240827185220_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\neworderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\neworderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827183217_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LumberShop.DataAccess\\Migrations\\20240827183217_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\newdimensionsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\newdimensionsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\cuttinglistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\cuttinglistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\model\\cuttinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\model\\cuttinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\interfaces\\icuttinglistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\interfaces\\icuttinglistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop\\controllers\\cuttinglistitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF1DD6B-8844-4673-A66A-EC86CD58893F}|LumberShop\\LumberStoreSystem.API.csproj|solutionrelative:lumbershop\\controllers\\cuttinglistitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.dataaccess\\repository\\cuttinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A41A7ADC-5074-4264-A28A-BA4055F1552F}|LumberShop.DataAccess\\LumberStoreSystem.DataAccess.csproj|solutionrelative:lumbershop.dataaccess\\repository\\cuttinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.bussinesslogic\\services\\orderitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|solutionrelative:lumbershop.bussinesslogic\\services\\orderitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.bussinesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|solutionrelative:lumbershop.bussinesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumbershop.bussinesslogic\\services\\cuttinglistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB6865D-07F0-4174-AB40-C8F823211171}|LumberShop.BussinessLogic\\LumberStoreSystem.BussinessLogic.csproj|solutionrelative:lumbershop.bussinesslogic\\services\\cuttinglistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|c:\\users\\kovac_impo9dd\\source\\repos\\lumbershop\\lumberstoresystem.contracts\\cuttinglistitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40676C36-FF8E-4467-8C59-FA7E0DA216EF}|LumberStoreSystem.Contracts\\LumberStoreSystem.Contracts.csproj|solutionrelative:lumberstoresystem.contracts\\cuttinglistitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -147,211 +95,147 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductCategory.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Enummerations\\ProductCategory.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Enummerations\\ProductCategory.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Enummerations\\ProductCategory.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\Enummerations\\ProductCategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T23:24:02.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Program.cs",
-              "RelativeDocumentMoniker": "LumberShop\\Program.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Program.cs",
-              "RelativeToolTip": "LumberShop\\Program.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T19:49:51.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Address.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Address.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Address.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\Address.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:50:45.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderItemController.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\OrderItemController.cs",
-              "RelativeDocumentMoniker": "LumberShop\\Controllers\\OrderItemController.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\OrderItemController.cs",
-              "RelativeToolTip": "LumberShop\\Controllers\\OrderItemController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T19:37:59.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "LumberShop\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "LumberShop\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAkwE4AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:42:32.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CuttingListItem.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\CuttingListItem.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\CuttingListItem.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\CuttingListItem.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\CuttingListItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:51:56.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Product.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Product.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Product.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\Product.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:49:36.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Client.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Client.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Client.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:51:06.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\ClientRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\ClientRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\ClientRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\ClientRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T20:02:19.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "LumberShop.BussinessLogic\\Services\\OrderService.cs",
               "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\OrderService.cs",
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\OrderService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAEwCwAAAAIAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAApwAYAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:43:09.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T14:54:17.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CuttingList.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\CuttingList.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\CuttingList.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\CuttingList.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\CuttingList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABpAAAA",
+              "DocumentIndex": 5,
+              "Title": "NewCuttingListItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewCuttingListItemDTO.cs",
+              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\NewCuttingListItemDTO.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewCuttingListItemDTO.cs",
+              "RelativeToolTip": "LumberStoreSystem.Contracts\\NewCuttingListItemDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:51:39.581Z"
+              "WhenOpened": "2024-10-08T14:52:35.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "NewOrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewOrderDTO.cs",
               "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\NewOrderDTO.cs",
               "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewOrderDTO.cs",
               "RelativeToolTip": "LumberStoreSystem.Contracts\\NewOrderDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:35:50.777Z",
+              "WhenOpened": "2024-10-08T14:51:41.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewCuttingListDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewCuttingListDTO.cs",
+              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\NewCuttingListDTO.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewCuttingListDTO.cs",
+              "RelativeToolTip": "LumberStoreSystem.Contracts\\NewCuttingListDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:52:33.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\ProductRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:04:55.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "LumberShop\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "LumberShop\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwEgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:46:01.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\OrderRepository.cs",
+              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\OrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:54:46.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderItemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\OrderItemDTO.cs",
-              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\OrderItemDTO.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\OrderItemDTO.cs",
-              "RelativeToolTip": "LumberStoreSystem.Contracts\\OrderItemDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:40:08.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NewOrderItemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
-              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
-              "RelativeToolTip": "LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:40:18.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LumberStoreSystemDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\LumberStoreSystemDbContext.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\LumberStoreSystemDbContext.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\LumberStoreSystemDbContext.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\LumberStoreSystemDbContext.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADwvyAAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:18:36.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Order.cs",
               "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Order.cs",
               "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Order.cs",
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:18:33.537Z"
+              "WhenOpened": "2024-10-08T15:11:34.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewOrderItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
+              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
+              "RelativeToolTip": "LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:53:21.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NewDimensionsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewDimensionsDTO.cs",
+              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\NewDimensionsDTO.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\NewDimensionsDTO.cs",
+              "RelativeToolTip": "LumberStoreSystem.Contracts\\NewDimensionsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:06:56.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\OrderDTO.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\OrderDTO.cs",
+              "RelativeToolTip": "LumberStoreSystem.Contracts\\OrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:07:02.732Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\EmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\EmployeeRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\EmployeeRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAABCAAAA",
+              "Title": "CuttingList.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\CuttingList.cs",
+              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\CuttingList.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\CuttingList.cs",
+              "RelativeToolTip": "LumberShop.DataAccess\\Model\\CuttingList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T20:01:15.143Z"
+              "WhenOpened": "2024-10-08T15:00:36.556Z"
             },
             {
               "$type": "Document",
@@ -361,165 +245,69 @@
               "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\UserRepository.cs",
               "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\UserRepository.cs",
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA5wCUAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:14:08.357Z"
+              "WhenOpened": "2024-10-08T15:04:54.743Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Employee.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Employee.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Employee.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\Employee.cs",
+              "Title": "CuttingListRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\CuttingListRepository.cs",
+              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\CuttingListRepository.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\CuttingListRepository.cs",
+              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\CuttingListRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:52:00.931Z"
+              "WhenOpened": "2024-10-08T15:02:04.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20240827195415_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827195415_InitialMigration.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Migrations\\20240827195415_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827195415_InitialMigration.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Migrations\\20240827195415_InitialMigration.cs",
+              "DocumentIndex": 14,
+              "Title": "OrderItemService.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\OrderItemService.cs",
+              "RelativeDocumentMoniker": "LumberShop.BussinessLogic\\Services\\OrderItemService.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\OrderItemService.cs",
+              "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\OrderItemService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:54:15.854Z"
+              "WhenOpened": "2024-10-08T14:59:49.356Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\User.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\User.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\User.cs",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "LumberShop.BussinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\UserService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:59:42.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CuttingListService.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\CuttingListService.cs",
+              "RelativeDocumentMoniker": "LumberShop.BussinessLogic\\Services\\CuttingListService.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.BussinessLogic\\Services\\CuttingListService.cs",
+              "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\CuttingListService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:59:36.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CuttingListItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\CuttingListItemDTO.cs",
+              "RelativeDocumentMoniker": "LumberStoreSystem.Contracts\\CuttingListItemDTO.cs",
+              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberStoreSystem.Contracts\\CuttingListItemDTO.cs",
+              "RelativeToolTip": "LumberStoreSystem.Contracts\\CuttingListItemDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:57:10.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\OrderItem.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\OrderItem.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\OrderItem.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T10:35:22.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\ProductRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\ProductRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAvwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:41:54.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Dimensions.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Dimensions.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\Dimensions.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Model\\Dimensions.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\Dimensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T10:22:59.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CuttingListItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\CuttingListItemRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\CuttingListItemRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\CuttingListItemRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\CuttingListItemRepository.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T11:23:16.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\OrderRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\OrderRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAuwCEAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T19:11:24.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "20240827185220_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827185220_InitialMigration.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Migrations\\20240827185220_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827185220_InitialMigration.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Migrations\\20240827185220_InitialMigration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:52:20.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrderItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\OrderItemRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Repository\\OrderItemRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Repository\\OrderItemRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Repository\\OrderItemRepository.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAA5wCcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:31:30.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "20240827183217_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827183217_InitialMigration.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Migrations\\20240827183217_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Migrations\\20240827183217_InitialMigration.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Migrations\\20240827183217_InitialMigration.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:32:18.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CuttingListItemController.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\CuttingListItemController.cs",
-              "RelativeDocumentMoniker": "LumberShop\\Controllers\\CuttingListItemController.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop\\Controllers\\CuttingListItemController.cs",
-              "RelativeToolTip": "LumberShop\\Controllers\\CuttingListItemController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAABoAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T08:13:27.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ICuttingListItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Interfaces\\ICuttingListItemRepository.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Interfaces\\ICuttingListItemRepository.cs",
-              "ToolTip": "C:\\Users\\kovac_impo9dd\\source\\repos\\LumberShop\\LumberShop.DataAccess\\Interfaces\\ICuttingListItemRepository.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Interfaces\\ICuttingListItemRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T11:23:01.025Z"
+              "WhenOpened": "2024-10-08T14:57:01.205Z"
             }
           ]
         }
