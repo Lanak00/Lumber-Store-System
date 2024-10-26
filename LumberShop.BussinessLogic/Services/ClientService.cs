@@ -2,11 +2,7 @@
 using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Interfaces;
 using LumberStoreSystem.DataAccess.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BCrypt.Net;
 
 namespace LumberStoreSystem.BussinessLogic.Services
 {
@@ -25,7 +21,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
                 FirstName = clientDTO.FirstName,
                 LastName = clientDTO.LastName,
                 Email = clientDTO.Email,
-                Password = clientDTO.Password,
+                Password = BCrypt.Net.BCrypt.HashPassword(clientDTO.Password),
                 DateOfBirth = clientDTO.DateOfBirth,
                 PhoneNumber = clientDTO.PhoneNumber,
                 AddressId = clientDTO.AddressId,

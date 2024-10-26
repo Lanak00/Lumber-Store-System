@@ -1,8 +1,14 @@
 ﻿using LumberStoreSystem.BussinessLogic.Interfaces;
+using LumberStoreSystem.BussinessLogic.Services;
 using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using BCrypt.Net;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -98,5 +104,56 @@ namespace LumberStoreSystem.API.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
+        {
+            try
+            {
+                var user = await _userService.GetByEmail(loginDTO.Email);
+                if (user == null)
+                {
+                    return Unauthorized("Invalid email or password");
+                }
+
+                bool isPasswordValid = BCrypt.Net.BCrypt.Verify(loginDTO.Password, user.Password);
+                if (!isPasswordValid)
+                {
+                    return Unauthorized("Invalid email or password");
+                }
+
+                // Generate JWT token
+                var token = GenerateJwtToken(user);
+                return Ok(new { Token = token });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
+        private string GenerateJwtToken(User user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourVerySecureSecretKeyThatIsLongEnough12345"));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+        new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new Claim("userId", user.Id.ToString()),
+        new Claim(ClaimTypes.Role, user.UserRole.ToString())
+    };
+
+            var token = new JwtSecurityToken(
+                issuer: "yourIssuer",
+                audience: "yourAudience",
+                claims: claims,
+                expires: DateTime.Now.AddMinutes(60),
+                signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
     }
 }

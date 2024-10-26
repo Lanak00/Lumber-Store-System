@@ -47,6 +47,11 @@ namespace LumberStoreSystem.BussinessLogic.Services
             return await _userRepository.GetAll();
         }
 
+        public async Task<User> GetByEmail(string email)
+        {
+            return await _userRepository.GetByEmail(email);
+        }
+
         public async Task<User> GetById(int id)
         {
             return await _userRepository.GetById(id);

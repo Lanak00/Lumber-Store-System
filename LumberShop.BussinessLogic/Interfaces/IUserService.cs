@@ -15,5 +15,6 @@ namespace LumberStoreSystem.BussinessLogic.Interfaces
         Task Add(UserDTO user);
         Task Update(UserDTO user);
         Task Delete(int id);
+        Task<User> GetByEmail(string email);
     }
 }

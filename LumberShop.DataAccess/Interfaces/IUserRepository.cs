@@ -18,5 +18,6 @@ namespace LumberStoreSystem.DataAccess.Interfaces
         Task Update(User user);
 
         Task Delete(User user);
+        Task<User> GetByEmail(string email);
     }
 }

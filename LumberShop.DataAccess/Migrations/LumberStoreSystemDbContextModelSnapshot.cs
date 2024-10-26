@@ -336,7 +336,7 @@ namespace LumberStoreSystem.DataAccess.Migrations
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.User", b =>
                 {
                     b.HasOne("LumberStoreSystem.DataAccess.Model.Address", "Address")
-                        .WithMany("Users")
+                        .WithMany()
                         .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -360,11 +360,6 @@ namespace LumberStoreSystem.DataAccess.Migrations
                         .HasForeignKey("LumberStoreSystem.DataAccess.Model.Employee", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.Address", b =>
-                {
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("LumberStoreSystem.DataAccess.Model.CuttingList", b =>

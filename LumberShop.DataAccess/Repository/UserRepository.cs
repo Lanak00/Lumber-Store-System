@@ -38,6 +38,11 @@ namespace LumberStoreSystem.DataAccess.Repository
             return await _context.Users.Include(u=> u.Address).FirstOrDefaultAsync(u => u.Id == id);
         }
 
+        public async Task<User> GetByEmail(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
+
         public async Task Update(User user)
         {
             _context.Users.Update(user);
