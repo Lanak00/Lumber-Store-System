@@ -35,6 +35,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddDbContext<LumberStoreSystemDbContext>(options =>
 {
     options.UseMySql(
@@ -52,6 +53,26 @@ builder.Services.AddCors(options =>
                           .AllowAnyHeader());
 });
 
+// JWT Configuration
+var key = Encoding.ASCII.GetBytes("YourVeryLongSecretKeyForJWTToken");
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
+
+// Register services
+builder.Services.AddScoped<TokenService>(provider => new TokenService("YourVeryLongSecretKeyForJWTToken"));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
@@ -61,6 +82,7 @@ builder.Services.AddScoped<IDimensionsRepository, DimensionsRepository>();
 builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<ICuttingListItemRepository, CuttingListItemRepository>();
+builder.Services.AddScoped<ICuttingOptimizationService, CuttingOptimizationService>();
 
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -81,12 +103,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Enable CORS
 app.UseCors("AllowReactApp");
 
-var contextFactory = new LumberStoreSystemContextFactory();
-string connectionString = "server=localhost;database=lumberstoresystem;uid=root;pwd=root;Old Guids=true";
-var context = contextFactory.CreateDbContext(new string[] { connectionString });
-
+// Use Authentication and Authorization middleware
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 

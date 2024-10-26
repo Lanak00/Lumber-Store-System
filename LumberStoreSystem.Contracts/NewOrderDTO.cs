@@ -14,5 +14,7 @@ namespace LumberStoreSystem.Contracts
         public OrderStatus Status { get; set; }
         public int ClientId { get; set; }
         public ICollection<NewOrderItemDTO> Items { get; set; } = new List<NewOrderItemDTO>();
+
+        public ICollection<NewCuttingListDTO> CuttingLists { get; set; } = new List<NewCuttingListDTO>();
     }
 }

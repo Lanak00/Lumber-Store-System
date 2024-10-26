@@ -70,7 +70,7 @@ namespace LumberStoreSystem.API.Controllers
             }
         }
 
-        // POST api/<OrderItemController>
+        // POST
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] NewOrderDTO order)
         {

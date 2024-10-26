@@ -20,13 +20,16 @@ namespace LumberStoreSystem.BussinessLogic.Services
         }
         public async Task Add(UserDTO userDTO)
         {
+
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(userDTO.Password);
+
             var user = new User
             {
                 Id = new int(),
                 FirstName = userDTO.FirstName,
                 LastName = userDTO.LastName,
                 Email = userDTO.Email,
-                Password = userDTO.Password,
+                Password = hashedPassword,
                 DateOfBirth = userDTO.DateOfBirth,
                 PhoneNumber = userDTO.PhoneNumber,
                 AddressId = userDTO.AddressId,
@@ -65,13 +68,26 @@ namespace LumberStoreSystem.BussinessLogic.Services
                 FirstName = userDTO.FirstName,
                 LastName = userDTO.LastName,
                 Email = userDTO.Email,
-                Password = userDTO.Password,
+                Password = BCrypt.Net.BCrypt.HashPassword(userDTO.Password),
                 DateOfBirth = userDTO.DateOfBirth,
                 PhoneNumber = userDTO.PhoneNumber,
                 AddressId = userDTO.AddressId,
                 UserRole = userDTO.Role
             };
             await _userRepository.Update(user);
+        }
+
+        public async Task<User> Authenticate(string username, string password)
+        {
+            var user = await _userRepository.GetUserByUsername(username);
+
+            if (user == null)
+                return null;
+
+            if (!BCrypt.Net.BCrypt.Verify(password, user.Password))
+                return null;
+
+            return user;
         }
     }
 }

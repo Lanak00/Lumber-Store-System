@@ -39,6 +39,7 @@ namespace LumberStoreSystem.DataAccess.Repository
             return await _context.Orders
                         .Where(o => o.ClientId == clientId)
                         .Include(o => o.Items)
+                        .Include(o => o.CuttingLists)
                         .ToListAsync();
         }
 
@@ -50,7 +51,10 @@ namespace LumberStoreSystem.DataAccess.Repository
 
         public async Task<IEnumerable<Order>> GetAll()
         {
-            var orders =  await _context.Orders.Include(o => o.Items).ToListAsync();
+            var orders =  await _context.Orders
+                        .Include(o => o.Items)
+                        .Include(o => o.CuttingLists)
+                        .ToListAsync();
 
             return orders;
         }
