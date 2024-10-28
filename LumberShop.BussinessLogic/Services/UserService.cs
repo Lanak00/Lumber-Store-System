@@ -76,18 +76,5 @@ namespace LumberStoreSystem.BussinessLogic.Services
             };
             await _userRepository.Update(user);
         }
-
-        public async Task<User> Authenticate(string username, string password)
-        {
-            var user = await _userRepository.GetUserByUsername(username);
-
-            if (user == null)
-                return null;
-
-            if (!BCrypt.Net.BCrypt.Verify(password, user.Password))
-                return null;
-
-            return user;
-        }
     }
 }

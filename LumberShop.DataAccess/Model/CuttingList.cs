@@ -12,6 +12,8 @@ namespace LumberStoreSystem.DataAccess.Model
         public string ProductId { get; set; }
         public Product Product { get; set; } 
         public int OrderId { get; set; }
+        public float Price {  get; set; }
         public ICollection<CuttingListItem> cuttingListItems { get; set; } = new List<CuttingListItem>();
     }
 }
+

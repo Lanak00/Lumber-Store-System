@@ -2,6 +2,7 @@
 using LumberStoreSystem.BussinessLogic.Services;
 using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LumberStoreSystem.API.Controllers
@@ -17,12 +18,13 @@ namespace LumberStoreSystem.API.Controllers
         }
 
         [HttpGet]
+        //[Authorize(Roles = "Employee")]
         public async Task<IActionResult> GetAll()
         {
             try
             {
-                var order = await _orderService.GetAll();
-                return Ok(order);
+                var orders = await _orderService.GetAll();
+                return Ok(orders);
             }
             catch (Exception ex)
             {
@@ -37,11 +39,6 @@ namespace LumberStoreSystem.API.Controllers
             try
             {
                 var order = await _orderService.GetById(id);
-
-                if (order == null)
-                {
-                    return NotFound();
-                }
                 return Ok(order);
             }
             catch (Exception ex)
@@ -50,23 +47,18 @@ namespace LumberStoreSystem.API.Controllers
             }
         }
 
-        // GET api/<EmployeeController>/5
         [HttpGet("byClientId/{id}")]
+        //[Authorize(Roles = "Client")]
         public async Task<IActionResult> GetByClientId(int id)
         {
             try
             {
-                var order = await _orderService.GetByClientId(id);
-
-                if (order == null)
-                {
-                    return NotFound();
-                }
-                return Ok(order);
+                var orders = await _orderService.GetByClientId(id);
+                return Ok(orders);
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving order");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving orders");
             }
         }
 

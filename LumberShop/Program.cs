@@ -53,26 +53,8 @@ builder.Services.AddCors(options =>
                           .AllowAnyHeader());
 });
 
-// JWT Configuration
-var key = Encoding.ASCII.GetBytes("YourVeryLongSecretKeyForJWTToken");
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    };
-});
 
 // Register services
-builder.Services.AddScoped<TokenService>(provider => new TokenService("YourVeryLongSecretKeyForJWTToken"));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
@@ -107,8 +89,6 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowReactApp");
 
 // Use Authentication and Authorization middleware
-app.UseAuthentication();
-app.UseAuthorization();
 
 app.UseHttpsRedirection();
 

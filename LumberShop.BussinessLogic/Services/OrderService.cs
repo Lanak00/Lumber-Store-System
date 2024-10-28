@@ -3,6 +3,7 @@ using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Interfaces;
 using LumberStoreSystem.DataAccess.Model;
 using LumberStoreSystem.DataAccess.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace LumberStoreSystem.BussinessLogic.Services
 {
-    public class OrderService : IOrderService
+    public class OrderService :   IOrderService
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IOrderItemRepository _orderItemRepository;
@@ -38,6 +39,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
             var cuttingLists = orderDTO.CuttingLists.Select(cl => new CuttingList
             {
                 ProductId = cl.ProductId,
+                Price = cl.Price,
                 cuttingListItems = cl.Items.Select(cli => new CuttingListItem
                 {
                     Length = cli.Length,
@@ -57,20 +59,25 @@ namespace LumberStoreSystem.BussinessLogic.Services
             await _orderRepository.Delete(order);
         }
 
-        public async Task<IEnumerable<Order>> GetAll()
+        public async Task<IEnumerable<OrderDTO>> GetAll()
         {
             var orders = await _orderRepository.GetAll();
-            return orders;
+            return orders.Select(MapOrderToDTO).ToList();
         }
 
-        public async Task<IEnumerable<Order>> GetByClientId(int clientId)
+        public async Task<IEnumerable<OrderDTO>> GetByClientId(int clientId)
         {
-            return await _orderRepository.GetByClientId(clientId);
+            var orders = await _orderRepository.GetByClientId(clientId);
+            return orders.Select(MapOrderToDTO).ToList();
         }
 
-        public async Task<Order> GetById(int id)
+        public async Task<OrderDTO> GetById(int id)
         {
-            return await _orderRepository.GetById(id);
+            var order = await _orderRepository.GetById(id);
+            if (order == null)
+                return null;
+
+            return MapOrderToDTO(order);
         }
 
         public async Task Update(OrderDTO orderDTO)
@@ -78,9 +85,8 @@ namespace LumberStoreSystem.BussinessLogic.Services
             var order = new Order
             {
                 Id = orderDTO.Id,
-                ClientId = orderDTO.ClientId,
                 Date = orderDTO.Date,
-                Status = orderDTO.Status
+                Status = (DataAccess.Model.Enummerations.OrderStatus)orderDTO.Status
             };
             await _orderRepository.Update(order);
         }
@@ -98,6 +104,43 @@ namespace LumberStoreSystem.BussinessLogic.Services
                     Amount = i.Amount,
                     ProductId = i.ProductId,
                 }).ToList()
+            };
+        }
+
+        private OrderDTO MapOrderToDTO(Order order)
+        {
+            return new OrderDTO
+            {
+                Id = order.Id,
+                Date = order.Date,
+                Status = (int)order.Status,
+
+                Items = order.Items.Select(item => new ItemDto
+                {
+                    ProductName = item.Product.Name,
+                    Quantity = item.Amount,
+                    Price = item.Product.Price,
+                    ProductImage = item.Product.Image
+                }).ToList(),
+
+                CuttingLists = order.CuttingLists.Select(cl => new CuttingListDTO
+                {
+                    Id = cl.Id,
+                    ProductName = cl.Product.Name,
+                    Price = cl.Price,
+                    Image = cl.Product.Image,
+                    CuttingListItems = cl.cuttingListItems.Select(cli => new CuttingListItemDTO
+                    {
+                        Id = cli.Id,
+                        Length = cli.Length,
+                        Width = cli.Width,
+                        Amount = cli.Amount,
+                        CuttingListId = cli.CuttingListId,
+                    }).ToList()
+                }).ToList(),
+
+                TotalPrice = order.Items.Sum(item => item.Product.Price * item.Amount) +
+                             order.CuttingLists.Sum(cl => cl.Price)
             };
         }
     }

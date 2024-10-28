@@ -31,16 +31,21 @@ namespace LumberStoreSystem.DataAccess.Repository
 
         public async Task<Order> GetById(int id)
         {
-            return await _context.Orders.Include(o=>o.Items).FirstOrDefaultAsync(o => o.Id == id);
+            return await _context.Orders.Include(o=>o.Items).ThenInclude(item => item.Product)
+                                        .Include(o => o.CuttingLists)
+                                        .ThenInclude(cl => cl.Product)
+                                        .FirstOrDefaultAsync(o => o.Id == id);
         }
 
         public async Task<IEnumerable<Order>> GetByClientId(int clientId)
         {
             return await _context.Orders
-                        .Where(o => o.ClientId == clientId)
-                        .Include(o => o.Items)
-                        .Include(o => o.CuttingLists)
-                        .ToListAsync();
+                .Where(o => o.ClientId == clientId)
+                .Include(o => o.Items)
+                .ThenInclude(item => item.Product) 
+                .Include(o => o.CuttingLists)
+                .ThenInclude(cl => cl.Product) 
+                .ToListAsync();
         }
 
         public async Task Update(Order order)
@@ -53,7 +58,9 @@ namespace LumberStoreSystem.DataAccess.Repository
         {
             var orders =  await _context.Orders
                         .Include(o => o.Items)
+                        .ThenInclude(item => item.Product)
                         .Include(o => o.CuttingLists)
+                        .ThenInclude(cl => cl.Product)
                         .ToListAsync();
 
             return orders;

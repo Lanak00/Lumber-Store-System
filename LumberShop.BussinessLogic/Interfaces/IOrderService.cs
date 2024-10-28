@@ -10,9 +10,9 @@ namespace LumberStoreSystem.BussinessLogic.Interfaces
 {
     public interface IOrderService
     {
-        Task<IEnumerable<Order>> GetAll();
-        Task<Order> GetById(int id);
-        Task<IEnumerable<Order>> GetByClientId(int clientId);
+        Task<IEnumerable<OrderDTO>> GetAll();
+        Task<OrderDTO> GetById(int id);
+        Task<IEnumerable<OrderDTO>> GetByClientId(int clientId);
         Task Add(NewOrderDTO order);
         Task Update(OrderDTO order);
         Task Delete(int id);

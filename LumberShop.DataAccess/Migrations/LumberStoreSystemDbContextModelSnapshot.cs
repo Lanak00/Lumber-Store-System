@@ -55,6 +55,9 @@ namespace LumberStoreSystem.DataAccess.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
+                    b.Property<float>("Price")
+                        .HasColumnType("float");
+
                     b.Property<string>("ProductId")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
