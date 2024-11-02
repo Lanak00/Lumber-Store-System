@@ -9,6 +9,7 @@ using LumberStoreSystem.DataAccess.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using LumberStoreSystem.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,19 +20,25 @@ builder.Services.AddAuthentication(options =>
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
-    .AddJwtBearer(options =>
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false; // Disable in dev mode if using HTTP
+    options.SaveToken = true; // Save token for future use
+
+    options.TokenValidationParameters = new TokenValidationParameters
     {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = "yourIssuer",
-            ValidAudience = "yourAudience",
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourVerySecureSecretKeyThatIsLongEnough12345"))
-        };
-    });
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = "yourIssuer", // Ensure this matches the issuer in your token
+        ValidAudience = "yourAudience", // Ensure this matches the audience in your token
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes("YourVerySecureSecretKeyThatIsLongEnough12345")),
+
+        ClockSkew = TimeSpan.Zero // Optional: reduce clock skew to prevent token expiry issues
+    };
+});
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -53,6 +60,10 @@ builder.Services.AddCors(options =>
                           .AllowAnyHeader());
 });
 
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
+// Register the EmailService
+builder.Services.AddTransient<IEmailService, EmailService>();
 
 // Register services
 builder.Services.AddScoped<IProductRepository, ProductRepository>();

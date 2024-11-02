@@ -1,4 +1,5 @@
-﻿using LumberStoreSystem.Contracts;
+﻿using CutOptimizer;
+using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Model;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace LumberStoreSystem.BussinessLogic.Interfaces
 {
     public interface  ICuttingOptimizationService
     {
-        int CalculateNumberOfBoards(int boardWidth, int boardHeight, List<CuttingListItemModel> cuttingList);
+        string Optimize(int boardWidth, int boardHeight, List<CuttingListItemModel> cuttingList, string clientName, DateTime orderDate, int orderId, string productName, string productId);
+        List<List<CutPiece>> GroupItemsIntoBoards(List<CuttingListItemModel> cuttingList, int boardWidth, int boardHeight);
     }
 }

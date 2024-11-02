@@ -134,26 +134,29 @@ namespace LumberStoreSystem.API.Controllers
 
         private string GenerateJwtToken(User user)
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourVerySecureSecretKeyThatIsLongEnough12345"));
+            var securityKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes("YourVerySecureSecretKeyThatIsLongEnough12345"));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
+            var claims = new List<Claim>
             {
-        new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        new Claim("userId", user.Id.ToString()),
-        new Claim(ClaimTypes.Role, user.UserRole.ToString())
-    };
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                new Claim("userId", user.Id.ToString()),
+                new Claim(ClaimTypes.Role, user.UserRole.ToString()), // Ensure role is included here
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
 
             var token = new JwtSecurityToken(
                 issuer: "yourIssuer",
                 audience: "yourAudience",
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(60),
+                expires: DateTime.UtcNow.AddMinutes(60),
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
 
     }
 }

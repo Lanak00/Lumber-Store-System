@@ -36,6 +36,20 @@ namespace LumberStoreSystem.API.Controllers
             }
         }
 
+        [HttpPost("getOrCreate")]
+        public async Task<IActionResult> GetOrCreateAddress([FromBody] NewAddressDTO addressDto)
+        {
+            try
+            {
+                var address = await _addressService.GetOrCreateAddressAsync(addressDto);
+                return Ok(address);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
         /// GET api/<AddressController>/FindByAll
         [HttpGet("FindByAll")]
         public async Task<IActionResult> FindByAll(string city, string country, string street, string number)

@@ -19,8 +19,20 @@ namespace LumberStoreSystem.DataAccess.Repository
 
         public async Task Add(Order order)
         {
-            _context.Orders.Add(order);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Orders.Add(order);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving order: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                }
+                throw;
+            }
         }
 
         public async Task Delete(Order order)
@@ -31,10 +43,14 @@ namespace LumberStoreSystem.DataAccess.Repository
 
         public async Task<Order> GetById(int id)
         {
-            return await _context.Orders.Include(o=>o.Items).ThenInclude(item => item.Product)
-                                        .Include(o => o.CuttingLists)
-                                        .ThenInclude(cl => cl.Product)
-                                        .FirstOrDefaultAsync(o => o.Id == id);
+            return await _context.Orders
+                .Include(o => o.Items)
+                    .ThenInclude(item => item.Product)
+                .Include(o => o.CuttingLists)
+                    .ThenInclude(cl => cl.Product)
+                .Include(o => o.CuttingLists)
+                    .ThenInclude(cl => cl.cuttingListItems) 
+                .FirstOrDefaultAsync(o => o.Id == id);
         }
 
         public async Task<IEnumerable<Order>> GetByClientId(int clientId)

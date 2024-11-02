@@ -1,148 +1,287 @@
-﻿using Google.OrTools.Sat;
-using LumberStoreSystem.BussinessLogic.Interfaces;
+﻿using LumberStoreSystem.BussinessLogic.Interfaces;
 using LumberStoreSystem.Contracts;
-using LumberStoreSystem.DataAccess.Model;
+using SkiaSharp;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using CutOptimizer;
 
 namespace LumberStoreSystem.BussinessLogic.Services
 {
     public class CuttingOptimizationService : ICuttingOptimizationService
     {
-        public int CalculateNumberOfBoards(int boardWidth, int boardHeight, List<CuttingListItemModel> cuttingList)
+        public string Optimize(int boardWidth, int boardHeight, List<CuttingListItemModel> cuttingList, string clientName, DateTime orderDate, int orderId, string productName, string productId)
         {
-            // Expand the cutting list based on the amount of each piece
-            List<CuttingListItem> expandedCuttingList = new List<CuttingListItem>();
+            // Sort the cutting list by area in descending order
+            var sortedCuttingList = cuttingList.OrderByDescending(item => item.Width * item.Length).ToList();
+
+            var groupedCuttingLists = GroupItemsIntoBoards(sortedCuttingList, boardWidth, boardHeight);
+            var boardLayouts = new List<BoardLayout>();
+
+            foreach (var group in groupedCuttingLists)
+            {
+                var optimizer = new Optimizer()
+                    .AddStockPieces(new List<StockPiece> {
+                        new StockPiece
+                        {
+                            Width = boardWidth,
+                            Length = boardHeight,
+                            PatternDirection = PatternDirection.None,
+                            Price = 0,
+                            Quantity = null
+                        }
+                    })
+                    .AddCutPieces(group);
+
+                optimizer.CutWidth = 0;
+                optimizer.RandomSeed = 1;
+
+                var solution = optimizer.OptimizeGuillotine(_ => { });
+
+                foreach (var stockPiece in solution.StockPieces)
+                {
+                    if (stockPiece.CutPieces.Count > 0)
+                    {
+                        var boardLayout = new BoardLayout();
+                        foreach (var cutPiece in stockPiece.CutPieces)
+                        {
+                            boardLayout.Pieces.Add(new PiecePosition
+                            {
+                                X = cutPiece.X,
+                                Y = cutPiece.Y,
+                                Width = cutPiece.Width,
+                                Length = cutPiece.Length
+                            });
+                        }
+                        boardLayouts.Add(boardLayout);
+                    }
+                }
+            }
+
+            // Export the layout to a PDF
+            
+
+            return ExportToPdf(boardLayouts, boardWidth, boardHeight, productName, productId, clientName, orderId, orderDate);
+        }
+
+        public List<List<CutPiece>> GroupItemsIntoBoards(List<CuttingListItemModel> cuttingList, int boardWidth, int boardHeight)
+        {
+            var groupedCuttingLists = new List<List<CutPiece>>();
+            var currentGroup = new List<CutPiece>();
+            var remainingPieces = new List<CutPiece>();
 
             foreach (var item in cuttingList)
             {
                 for (int i = 0; i < item.Amount; i++)
                 {
-                    if (item.Width > boardWidth || item.Length > boardHeight)
-                    {
-                        throw new ArgumentException("A piece is too large to fit on the board.");
-                    }
-
-                    expandedCuttingList.Add(new CuttingListItem
+                    var cutPiece = new CutPiece
                     {
                         Width = item.Width,
-                        Length = item.Length
-                    });
-                }
-            }
+                        Length = item.Length,
+                        Quantity = 1,
+                        ExternalId = i,
+                        PatternDirection = PatternDirection.None,
+                        CanRotate = true
+                    };
 
-            // Sort pieces by area (larger ones first) for better packing
-            expandedCuttingList.Sort((a, b) => (b.Width * b.Length).CompareTo(a.Width * a.Length));
-
-            CpModel model = new CpModel();
-
-            int numPieces = expandedCuttingList.Count;
-            int maxBoards = numPieces; // Maximum number of boards (1 piece per board is the worst-case scenario)
-
-            // Variables to indicate if a board is used
-            BoolVar[] boardUsed = new BoolVar[maxBoards];
-
-            // Variables for piece assignments and positions
-            BoolVar[,] assigned = new BoolVar[maxBoards, numPieces];
-            IntVar[,] xVars = new IntVar[maxBoards, numPieces];
-            IntVar[,] yVars = new IntVar[maxBoards, numPieces];
-
-            for (int b = 0; b < maxBoards; b++)
-            {
-                boardUsed[b] = model.NewBoolVar($"board_used_{b}");
-
-                for (int p = 0; p < numPieces; p++)
-                {
-                    CuttingListItem piece = expandedCuttingList[p];
-
-                    // Assign each piece to a board
-                    assigned[b, p] = model.NewBoolVar($"assigned_b{b}_p{p}");
-
-                    // Position variables for each piece
-                    xVars[b, p] = model.NewIntVar(0, boardWidth - piece.Width, $"x_b{b}_p{p}");
-                    yVars[b, p] = model.NewIntVar(0, boardHeight - piece.Length, $"y_b{b}_p{p}");
-
-                    // If a piece is assigned to a board, that board must be used
-                    model.AddImplication(assigned[b, p], boardUsed[b]);
-                }
-            }
-
-            // Each piece must be assigned to exactly one board
-            for (int p = 0; p < numPieces; p++)
-            {
-                List<ILiteral> assignments = new List<ILiteral>();
-                for (int b = 0; b < maxBoards; b++)
-                {
-                    assignments.Add(assigned[b, p]);
-                }
-                model.AddExactlyOne(assignments);
-            }
-
-            // Non-overlapping constraints for each board
-            for (int b = 0; b < maxBoards; b++)
-            {
-                for (int p = 0; p < numPieces; p++)
-                {
-                    for (int q = p + 1; q < numPieces; q++)
+                    if (CanFitPieceInGroup(currentGroup, cutPiece, boardWidth, boardHeight))
                     {
-                        // Non-overlapping constraints: either pieces must be separated horizontally or vertically
-
-                        // Create Boolean variables representing each condition
-                        BoolVar leftOf = model.NewBoolVar($"left_of_b{b}_p{p}_q{q}");
-                        BoolVar rightOf = model.NewBoolVar($"right_of_b{b}_p{p}_q{q}");
-                        BoolVar aboveOf = model.NewBoolVar($"above_of_b{b}_p{p}_q{q}");
-                        BoolVar belowOf = model.NewBoolVar($"below_of_b{b}_p{p}_q{q}");
-
-                        // Add constraints that bind the Boolean variables to the actual conditions
-                        model.Add(xVars[b, p] + expandedCuttingList[p].Width <= xVars[b, q]).OnlyEnforceIf(leftOf);
-                        model.Add(xVars[b, q] + expandedCuttingList[q].Width <= xVars[b, p]).OnlyEnforceIf(rightOf);
-                        model.Add(yVars[b, p] + expandedCuttingList[p].Length <= yVars[b, q]).OnlyEnforceIf(aboveOf);
-                        model.Add(yVars[b, q] + expandedCuttingList[q].Length <= yVars[b, p]).OnlyEnforceIf(belowOf);
-
-                        // Ensure that at least one of the non-overlapping conditions holds if both pieces are assigned to the same board
-                        model.AddBoolOr(new ILiteral[] { leftOf, rightOf, aboveOf, belowOf }).OnlyEnforceIf(new ILiteral[] { assigned[b, p], assigned[b, q] });
+                        currentGroup.Add(cutPiece);
+                    }
+                    else
+                    {
+                        remainingPieces.Add(cutPiece);
                     }
                 }
             }
 
-
-            // Objective: Minimize the number of boards used
-            model.Minimize(LinearExpr.Sum(boardUsed));
-
-            // Solve the model
-            CpSolver solver = new CpSolver();
-            solver.StringParameters = "max_time_in_seconds:60"; // Adjust time limit if necessary
-            CpSolverStatus status = solver.Solve(model);
-
-            if (status == CpSolverStatus.Optimal || status == CpSolverStatus.Feasible)
+            // Add the current group to the list if it has any pieces
+            if (currentGroup.Count > 0)
             {
-                int boardsUsed = 0;
-                for (int b = 0; b < maxBoards; b++)
-                {
-                    if (solver.BooleanValue(boardUsed[b]))
-                    {
-                        boardsUsed++;
-                        Console.WriteLine($"Board {b + 1} used:");
-                        for (int p = 0; p < numPieces; p++)
-                        {
-                            if (solver.BooleanValue(assigned[b, p]))
-                            {
-                                CuttingListItem piece = expandedCuttingList[p];
-                                long xVal = solver.Value(xVars[b, p]);
-                                long yVal = solver.Value(yVars[b, p]);
+                groupedCuttingLists.Add(new List<CutPiece>(currentGroup));
+                currentGroup.Clear();
+            }
 
-                                Console.WriteLine($" Piece {p + 1} at (x={xVal}, y={yVal}), width={piece.Width}, length={piece.Length}");
-                            }
-                        }
+            // Second pass: Try to fit remaining pieces into existing groups before creating new ones
+            foreach (var piece in remainingPieces)
+            {
+                bool pieceAdded = false;
+                foreach (var group in groupedCuttingLists)
+                {
+                    if (CanFitPieceInGroup(group, piece, boardWidth, boardHeight))
+                    {
+                        group.Add(piece);
+                        pieceAdded = true;
+                        break;
                     }
                 }
-                return boardsUsed;
+
+                // If the piece couldn't be added to any existing group, start a new group
+                if (!pieceAdded)
+                {
+                    currentGroup.Add(piece);
+                    groupedCuttingLists.Add(new List<CutPiece>(currentGroup));
+                    currentGroup.Clear();
+                }
             }
-            else
+
+            return groupedCuttingLists;
+        }
+
+        private bool CanFitPieceInGroup(List<CutPiece> currentGroup, CutPiece newPiece, int boardWidth, int boardHeight)
+        {
+            var optimizer = new Optimizer()
+                .AddStockPieces(new List<StockPiece> {
+                    new StockPiece
+                    {
+                        Width = boardWidth,
+                        Length = boardHeight,
+                        PatternDirection = PatternDirection.None,
+                        Price = 0,
+                        Quantity = null
+                    }
+                })
+                .AddCutPieces(currentGroup);
+
+            optimizer.AddCutPiece(newPiece);
+            optimizer.CutWidth = 0;
+            optimizer.RandomSeed = 1;
+
+            var solution = optimizer.OptimizeGuillotine(_ => { });
+
+            // If the solution fits in one board, return true
+            return solution.StockPieces.Count > 0 && solution.StockPieces[0].CutPieces.Count == currentGroup.Count + 1;
+        }
+
+        private string ExportToPdf(List<BoardLayout> boardLayouts, int boardWidth, int boardHeight, string productName, string productId, string clientName, int orderId, DateTime orderDate)
+        {
+            var tempPdfPath = Path.Combine(Path.GetTempPath(), $"CuttingLayout_{Guid.NewGuid()}.pdf");
+
+            // A4 page size in points (1 point = 1/72 inch)
+            const float a4Width = 595f;
+            const float a4Height = 842f;
+
+            using var document = SKDocument.CreatePdf(tempPdfPath);
+            foreach (var layout in boardLayouts)
             {
-                Console.WriteLine("No solution found.");
-                return -1;
+                // Begin A4-sized page
+                var canvas = document.BeginPage(a4Width, a4Height);
+
+                // Draw main heading at the top
+                DrawMainHeading(canvas, orderId, a4Width);
+
+                // Draw header with additional details, positioned further down
+                DrawHeader(canvas, productName, productId, clientName, orderId, orderDate, 80); // Adding extra space below main heading
+
+                // Calculate scaling factor to fit the board on A4 page and reduce it slightly
+                float scaleFactor = Math.Min((a4Width - 40) / boardWidth, (a4Height - 200) / boardHeight) * 0.8f;
+
+                // Position for the cutting board, with margin from the header
+                float boardX = (a4Width - (boardWidth * scaleFactor)) / 2;
+                float boardY = 200; // Adjust based on header size and padding
+
+                // Draw the cutting board layout
+                DrawLayout(canvas, layout, boardX, boardY, boardWidth, boardHeight, scaleFactor);
+
+                document.EndPage();
+            }
+            document.Close();
+
+            return tempPdfPath;
+        }
+
+
+
+        private void DrawLayout(SKCanvas canvas, BoardLayout layout, float boardX, float boardY, int boardWidth, int boardHeight, float scaleFactor)
+        {
+            // Draw the outer rectangle for the board
+            var boardRect = new SKRect(boardX, boardY, boardX + boardWidth * scaleFactor, boardY + boardHeight * scaleFactor);
+            var paint = new SKPaint
+            {
+                Style = SKPaintStyle.Stroke,
+                StrokeWidth = 2,
+                Color = SKColors.Black
+            };
+            canvas.DrawRect(boardRect, paint);
+
+            // Draw labels for board dimensions on the outer edges
+            var textPaint = new SKPaint
+            {
+                Color = SKColors.Black,
+                TextSize = 12,
+                IsAntialias = true
+            };
+
+            // Top edge label
+            canvas.DrawText($"{boardWidth} x {boardHeight}", boardX + (boardRect.Width / 2) - 20, boardY - 10, textPaint);
+
+            // Draw each piece within the board
+            foreach (var piece in layout.Pieces)
+            {
+                var pieceRect = new SKRect(
+                    boardX + piece.X * scaleFactor,
+                    boardY + piece.Y * scaleFactor,
+                    boardX + (piece.X + piece.Width) * scaleFactor,
+                    boardY + (piece.Y + piece.Length) * scaleFactor
+                );
+
+                canvas.DrawRect(pieceRect, paint);
+
+                // Draw piece dimensions inside each piece
+                canvas.DrawText($"{piece.Width} x {piece.Length}", pieceRect.Left + 5, pieceRect.Top + 15, textPaint);
             }
         }
+
+        private void DrawMainHeading(SKCanvas canvas, int orderId, float pageWidth)
+        {
+            var headingText = $"Porudzbina br. {orderId}";
+            var textPaint = new SKPaint
+            {
+                Color = SKColors.Black,
+                TextSize = 24, // Larger font size for main heading
+                IsAntialias = true,
+                TextAlign = SKTextAlign.Center
+            };
+
+            // Draw text centered at the top of the page
+            canvas.DrawText(headingText, pageWidth / 2, 40, textPaint);
+        }
+
+        private void DrawHeader(SKCanvas canvas, string productName, string productId, string clientName, int orderId, DateTime orderDate, float yPosition = 80)
+        {
+            var headerText = $"Proizvod: {productName}\n" +
+                             $"Šifra: {productId}\n" +
+                             $"Klijent: {clientName}\n" +
+                             $"Broj porudzbine: {orderId}\n" +
+                             $"Datum porudzbine: {orderDate:yyyy-MM-dd}";
+
+            var textPaint = new SKPaint
+            {
+                Color = SKColors.Black,
+                TextSize = 12, // Smaller font size for header details
+                IsAntialias = true
+            };
+
+            float xPosition = 20;
+
+            foreach (var line in headerText.Split('\n'))
+            {
+                canvas.DrawText(line, xPosition, yPosition, textPaint);
+                yPosition += textPaint.TextSize + 5; // Smaller spacing between lines
+            }
+        }
+    }
+
+    public class BoardLayout
+    {
+        public List<PiecePosition> Pieces { get; set; } = new List<PiecePosition>();
+    }
+
+    public class PiecePosition
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public int Width { get; set; }
+        public int Length { get; set; }
     }
 }

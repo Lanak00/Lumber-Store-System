@@ -14,6 +14,7 @@ namespace LumberStoreSystem.Contracts
         public DateOnly Date { get; set; }
         public int Status { get; set; }
         public float TotalPrice { get; set; }
+        public int ClientId { get; set; }
         public List<ItemDto> Items { get; set; } = new List<ItemDto>();
         public List<CuttingListDTO> CuttingLists { get; set; } = new List<CuttingListDTO>();
     }

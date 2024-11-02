@@ -4,6 +4,8 @@ using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace LumberStoreSystem.API.Controllers
 {
@@ -12,13 +14,15 @@ namespace LumberStoreSystem.API.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        public OrderController(IOrderService orderService)
+        private readonly IEmailService _emailService;
+        public OrderController(IOrderService orderService, IEmailService emailService)
         {
             _orderService = orderService;
+            _emailService = emailService;
         }
 
         [HttpGet]
-        //[Authorize(Roles = "Employee")]
+        [Authorize(Roles = "Employee")]
         public async Task<IActionResult> GetAll()
         {
             try
@@ -48,7 +52,7 @@ namespace LumberStoreSystem.API.Controllers
         }
 
         [HttpGet("byClientId/{id}")]
-        //[Authorize(Roles = "Client")]
+        [Authorize(Roles = "Client")]
         public async Task<IActionResult> GetByClientId(int id)
         {
             try
@@ -64,12 +68,27 @@ namespace LumberStoreSystem.API.Controllers
 
         // POST
         [HttpPost]
+        [Authorize(Roles = "Client")]
         public async Task<IActionResult> Post([FromBody] NewOrderDTO order)
         {
             try
             {
+                var email = User.FindFirst(ClaimTypes.Email)?.Value
+                    ?? User.FindFirst(JwtRegisteredClaimNames.Email)?.Value;
+
+                if (string.IsNullOrEmpty(email))
+                {
+                    return Unauthorized("Client email not found.");
+                }
+
                 await _orderService.Add(order);
-                return Ok("Successfully added new order");
+
+                string subject = "Order Confirmation";
+                string body = "Thank you for your order! We will process it as soon as possible and inform you when the order is ready for pickup.";
+                await _emailService.SendEmailAsync(email, subject, body);
+                var response = new { message = "Successfully added new order and sent confirmation email." };
+
+                return Ok(response);
             }
             catch (Exception ex)
             {

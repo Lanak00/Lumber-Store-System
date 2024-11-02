@@ -17,19 +17,16 @@ namespace LumberStoreSystem.Controllers
             _cuttingService = cuttingService;
         }
 
-        [HttpPost("calculate-boards")]
+        [HttpPost("CalculateBoards")]
         public IActionResult CalculateBoards([FromBody] CuttingRequest request)
         {
             try
             {
-                int numberOfBoards = _cuttingService.CalculateNumberOfBoards(
-                    request.BoardWidth,
-                    request.BoardHeight,
-                    request.CuttingList);
+                var numberOfBoards = _cuttingService.GroupItemsIntoBoards( request.CuttingList, request.BoardWidth, request.BoardHeight);
 
                 var response = new CuttingResponse
                 {
-                    NumberOfBoards = numberOfBoards,
+                    NumberOfBoards = numberOfBoards.Count,
                     Message = "Calculation successful."
                 };
 
@@ -37,7 +34,6 @@ namespace LumberStoreSystem.Controllers
             }
             catch (Exception ex)
             {
-                // Handle exceptions (e.g., no feasible solution, invalid input)
                 var response = new CuttingResponse
                 {
                     NumberOfBoards = -1,
@@ -46,12 +42,53 @@ namespace LumberStoreSystem.Controllers
                 return BadRequest(response);
             }
         }
+
+        [HttpPost("OptimizeAndGeneratePDF")]
+        public IActionResult CalculateBoardsAndGeneratePdf([FromBody] CuttingRequest request)
+        {
+            try
+            {
+                var pdfPath = _cuttingService.Optimize(request.BoardWidth, request.BoardHeight, request.CuttingList, request.ClientFirstName + " " + request.ClientLastName, request.OrderDate, request.OrderId, request.ProductName, request.ProductId);
+
+                if (!System.IO.File.Exists(pdfPath))
+                {
+                    return NotFound("PDF generation failed.");
+                }
+
+                var pdfBytes = System.IO.File.ReadAllBytes(pdfPath);
+
+                System.IO.File.Delete(pdfPath);
+
+                // Return the file as a downloadable response
+                var result = new FileContentResult(pdfBytes, "application/pdf")
+                {
+                    FileDownloadName = "CuttingLayout.pdf"
+                };
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = $"Error: {ex.Message}" });
+            }
+        }
+
     }
+
+
+
     public class CuttingRequest
     {
         public int BoardWidth { get; set; }
         public int BoardHeight { get; set; }
         public List<CuttingListItemModel> CuttingList { get; set; }
+
+        public string ProductName { get; set; }
+        public string ProductId { get; set; }
+        public string ClientFirstName { get; set; }
+        public string ClientLastName { get; set; }
+        public int OrderId { get; set; }
+        public DateTime OrderDate { get; set; }
     }
 
     public class CuttingResponse
@@ -59,4 +96,4 @@ namespace LumberStoreSystem.Controllers
         public int NumberOfBoards { get; set; }
         public string Message { get; set; }
     }
-}
+};

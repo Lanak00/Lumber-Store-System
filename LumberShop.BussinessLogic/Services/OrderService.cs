@@ -86,7 +86,8 @@ namespace LumberStoreSystem.BussinessLogic.Services
             {
                 Id = orderDTO.Id,
                 Date = orderDTO.Date,
-                Status = (DataAccess.Model.Enummerations.OrderStatus)orderDTO.Status
+                Status = (DataAccess.Model.Enummerations.OrderStatus)orderDTO.Status,
+                ClientId = orderDTO.ClientId,
             };
             await _orderRepository.Update(order);
         }
@@ -114,6 +115,7 @@ namespace LumberStoreSystem.BussinessLogic.Services
                 Id = order.Id,
                 Date = order.Date,
                 Status = (int)order.Status,
+                ClientId = order.ClientId,
 
                 Items = order.Items.Select(item => new ItemDto
                 {

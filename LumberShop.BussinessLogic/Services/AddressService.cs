@@ -3,6 +3,7 @@ using LumberStoreSystem.Contracts;
 using LumberStoreSystem.DataAccess.Interfaces;
 using LumberStoreSystem.DataAccess.Model;
 using LumberStoreSystem.DataAccess.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,35 @@ namespace LumberStoreSystem.BussinessLogic.Services
         {
             _addressRepository = clientRepository;
         }
+
+        public async Task<int> GetOrCreateAddressAsync(NewAddressDTO addressDTO)
+        {
+            var existingAddressId = await _addressRepository.FindByAll(new Address
+            {
+                Street = addressDTO.Street,
+                Number = addressDTO.Number,
+                City = addressDTO.City,
+                Country = addressDTO.Country
+            });
+
+            if (existingAddressId.HasValue)
+            {
+                return existingAddressId.Value; 
+            }
+
+            var newAddress = new Address
+            {
+                Street = addressDTO.Street,
+                Number = addressDTO.Number,
+                City = addressDTO.City,
+                Country = addressDTO.Country
+            };
+
+            await _addressRepository.Add(newAddress); 
+
+            return newAddress.Id; 
+        }
+
 
         public async Task<int> Add(NewAddressDTO addressDTO)
         {

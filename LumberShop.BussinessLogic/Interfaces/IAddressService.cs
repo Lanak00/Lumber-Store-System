@@ -14,5 +14,6 @@ namespace LumberStoreSystem.BussinessLogic.Interfaces
         Task<int?> FindByAll(AddressDTO address);
         Task<int> Add(NewAddressDTO address);
         Task Delete(int id);
+        Task<int> GetOrCreateAddressAsync(NewAddressDTO address);
     }
 }
