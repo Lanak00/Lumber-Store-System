@@ -22,7 +22,7 @@ namespace LumberStoreSystem.API.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Employee")]
+        [Authorize(Roles = "Employee, Administrator")]
         public async Task<IActionResult> GetAll()
         {
             try
@@ -83,10 +83,10 @@ namespace LumberStoreSystem.API.Controllers
 
                 await _orderService.Add(order);
 
-                string subject = "Order Confirmation";
-                string body = "Thank you for your order! We will process it as soon as possible and inform you when the order is ready for pickup.";
+                string subject = "Potvrda Porudzbine";
+                string body = "Hvala na poduzdbini! Pripremicemo je sto pre i javiti kada bude dostupna za preuzimanje";
                 await _emailService.SendEmailAsync(email, subject, body);
-                var response = new { message = "Successfully added new order and sent confirmation email." };
+                var response = new { message = "Uspesno kreirana nova porudzbina. Email sa potvrrdom je poslat na vasu adresu." };
 
                 return Ok(response);
             }

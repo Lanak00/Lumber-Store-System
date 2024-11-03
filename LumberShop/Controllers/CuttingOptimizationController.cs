@@ -72,10 +72,7 @@ namespace LumberStoreSystem.Controllers
                 return BadRequest(new { message = $"Error: {ex.Message}" });
             }
         }
-
     }
-
-
 
     public class CuttingRequest
     {
@@ -96,7 +93,6 @@ namespace LumberStoreSystem.Controllers
         public int BoardWidth { get; set; }
         public int BoardHeight { get; set; }
         public List<CuttingListItemModel> CuttingList { get; set; }
-
     }
 
     public class CuttingResponse

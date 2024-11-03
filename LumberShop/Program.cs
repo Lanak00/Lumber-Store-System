@@ -22,8 +22,8 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
-    options.RequireHttpsMetadata = false; // Disable in dev mode if using HTTP
-    options.SaveToken = true; // Save token for future use
+    options.RequireHttpsMetadata = false; 
+    options.SaveToken = true; 
 
     options.TokenValidationParameters = new TokenValidationParameters
     {
@@ -31,12 +31,12 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = "yourIssuer", // Ensure this matches the issuer in your token
-        ValidAudience = "yourAudience", // Ensure this matches the audience in your token
+        ValidIssuer = "yourIssuer", 
+        ValidAudience = "yourAudience", 
         IssuerSigningKey = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes("YourVerySecureSecretKeyThatIsLongEnough12345")),
 
-        ClockSkew = TimeSpan.Zero // Optional: reduce clock skew to prevent token expiry issues
+        ClockSkew = TimeSpan.Zero 
     };
 });
 builder.Services.AddControllers();

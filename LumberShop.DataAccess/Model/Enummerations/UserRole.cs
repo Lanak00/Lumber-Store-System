@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LumberStoreSystem.DataAccess.Model.Enummerations
+﻿namespace LumberStoreSystem.DataAccess.Model.Enummerations
 {
     public enum UserRole
     {
         Employee,
-        Client
+        Client, 
+        Administrator
     }
 }
