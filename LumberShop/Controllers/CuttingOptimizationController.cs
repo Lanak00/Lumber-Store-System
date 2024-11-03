@@ -18,7 +18,7 @@ namespace LumberStoreSystem.Controllers
         }
 
         [HttpPost("CalculateBoards")]
-        public IActionResult CalculateBoards([FromBody] CuttingRequest request)
+        public IActionResult CalculateBoards([FromBody] BoardCalculatingRequest request)
         {
             try
             {
@@ -89,6 +89,14 @@ namespace LumberStoreSystem.Controllers
         public string ClientLastName { get; set; }
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
+    }
+
+    public class BoardCalculatingRequest
+    {
+        public int BoardWidth { get; set; }
+        public int BoardHeight { get; set; }
+        public List<CuttingListItemModel> CuttingList { get; set; }
+
     }
 
     public class CuttingResponse

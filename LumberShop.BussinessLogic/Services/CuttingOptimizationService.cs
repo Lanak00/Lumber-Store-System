@@ -12,7 +12,6 @@ namespace LumberStoreSystem.BussinessLogic.Services
     {
         public string Optimize(int boardWidth, int boardHeight, List<CuttingListItemModel> cuttingList, string clientName, DateTime orderDate, int orderId, string productName, string productId)
         {
-            // Sort the cutting list by area in descending order
             var sortedCuttingList = cuttingList.OrderByDescending(item => item.Width * item.Length).ToList();
 
             var groupedCuttingLists = GroupItemsIntoBoards(sortedCuttingList, boardWidth, boardHeight);
@@ -57,9 +56,6 @@ namespace LumberStoreSystem.BussinessLogic.Services
                     }
                 }
             }
-
-            // Export the layout to a PDF
-            
 
             return ExportToPdf(boardLayouts, boardWidth, boardHeight, productName, productId, clientName, orderId, orderDate);
         }
@@ -164,23 +160,18 @@ namespace LumberStoreSystem.BussinessLogic.Services
             using var document = SKDocument.CreatePdf(tempPdfPath);
             foreach (var layout in boardLayouts)
             {
-                // Begin A4-sized page
+
                 var canvas = document.BeginPage(a4Width, a4Height);
 
-                // Draw main heading at the top
                 DrawMainHeading(canvas, orderId, a4Width);
 
-                // Draw header with additional details, positioned further down
-                DrawHeader(canvas, productName, productId, clientName, orderId, orderDate, 80); // Adding extra space below main heading
+                DrawHeader(canvas, productName, productId, clientName, orderId, orderDate, 80); 
 
-                // Calculate scaling factor to fit the board on A4 page and reduce it slightly
                 float scaleFactor = Math.Min((a4Width - 40) / boardWidth, (a4Height - 200) / boardHeight) * 0.8f;
 
-                // Position for the cutting board, with margin from the header
                 float boardX = (a4Width - (boardWidth * scaleFactor)) / 2;
-                float boardY = 200; // Adjust based on header size and padding
+                float boardY = 200; 
 
-                // Draw the cutting board layout
                 DrawLayout(canvas, layout, boardX, boardY, boardWidth, boardHeight, scaleFactor);
 
                 document.EndPage();
@@ -212,7 +203,6 @@ namespace LumberStoreSystem.BussinessLogic.Services
                 IsAntialias = true
             };
 
-            // Top edge label
             canvas.DrawText($"{boardWidth} x {boardHeight}", boardX + (boardRect.Width / 2) - 20, boardY - 10, textPaint);
 
             // Draw each piece within the board
