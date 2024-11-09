@@ -1,9 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using LumberStoreSystem.DataAccess;
-using Microsoft.AspNetCore.Connections;
 using LumberStoreSystem.DataAccess.Repository;
 using LumberStoreSystem.BussinessLogic.Services;
-using Microsoft.Extensions.Configuration;
 using LumberStoreSystem.BussinessLogic.Interfaces;
 using LumberStoreSystem.DataAccess.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;

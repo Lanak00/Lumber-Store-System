@@ -308,21 +308,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\kovac\\Desktop\\Lumber-Store-System\\LumberShop.DataAccess\\Model\\User.cs",
-              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\kovac\\Desktop\\Lumber-Store-System\\LumberShop.DataAccess\\Model\\User.cs",
-              "RelativeToolTip": "LumberShop.DataAccess\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:57:10.299Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -333,8 +320,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:52:00.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:52:00.931Z"
             },
             {
               "$type": "Document",
@@ -346,8 +332,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\OrderItem.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T10:35:22.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T10:35:22.579Z"
             },
             {
               "$type": "Document",
@@ -359,8 +344,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\LumberStoreSystemDbContext.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAawBcAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:18:36.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T18:18:36.097Z"
             },
             {
               "$type": "Document",
@@ -372,8 +356,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\UserController.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAmwEgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:51:56.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:51:56.27Z"
             },
             {
               "$type": "Document",
@@ -385,8 +368,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\UserService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAzwCMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:53:19.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:53:19.187Z"
             },
             {
               "$type": "Document",
@@ -398,8 +380,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\OrderController.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAowDYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:42:32.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T18:42:32.19Z"
             },
             {
               "$type": "Document",
@@ -411,8 +392,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:51:06.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:51:06.16Z"
             },
             {
               "$type": "Document",
@@ -422,10 +402,22 @@
               "RelativeDocumentMoniker": "LumberShop\\Program.cs",
               "ToolTip": "C:\\Users\\kovac\\Desktop\\Lumber-Store-System\\LumberShop\\Program.cs",
               "RelativeToolTip": "LumberShop\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T19:49:51.385Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\kovac\\Desktop\\Lumber-Store-System\\LumberShop.DataAccess\\Model\\User.cs",
+              "RelativeDocumentMoniker": "LumberShop.DataAccess\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\kovac\\Desktop\\Lumber-Store-System\\LumberShop.DataAccess\\Model\\User.cs",
+              "RelativeToolTip": "LumberShop.DataAccess\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T19:57:10.299Z"
             },
             {
               "$type": "Document",
@@ -437,8 +429,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Enummerations\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:44:59.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:44:59.624Z"
             },
             {
               "$type": "Document",
@@ -450,8 +441,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\CuttingOptimizationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T18:01:29.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T18:01:29.872Z"
             },
             {
               "$type": "Document",
@@ -463,8 +453,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Interfaces\\ICuttingOptimizationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:42:26.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T17:42:26.984Z"
             },
             {
               "$type": "Document",
@@ -476,8 +465,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\CuttingListItemController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T08:13:27.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:13:27.181Z"
             },
             {
               "$type": "Document",
@@ -489,8 +477,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\EmailService.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAkwBAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:38:41.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T05:38:41.507Z"
             },
             {
               "$type": "Document",
@@ -502,8 +489,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\CuttingOptimizationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:00:16.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T20:00:16.466Z"
             },
             {
               "$type": "Document",
@@ -515,8 +501,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Product.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:49:36.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:49:36.657Z"
             },
             {
               "$type": "Document",
@@ -528,8 +513,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\OrderItemRepository.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:31:30.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T18:31:30.539Z"
             },
             {
               "$type": "Document",
@@ -541,8 +525,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\EmployeeRepository.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA1wCAAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T20:01:15.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T20:01:15.143Z"
             },
             {
               "$type": "Document",
@@ -554,8 +537,7 @@
               "RelativeToolTip": "..\\..\\Downloads\\optimizer\\optimizer\\CutOptimizer\\Guillotine.cs",
               "ViewState": "AgIAAFABAAAAAAAAAAAwwGEBAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T15:18:48.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T15:18:48.075Z"
             },
             {
               "$type": "Document",
@@ -567,8 +549,7 @@
               "RelativeToolTip": "..\\..\\Downloads\\optimizer\\optimizer\\CutOptimizer\\Optimizer.cs",
               "ViewState": "AgIAAM8CAAAAAAAAAAAowN8CAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T15:28:56.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T15:28:56.347Z"
             },
             {
               "$type": "Document",
@@ -580,8 +561,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Enummerations\\ProductCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T23:24:02.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T23:24:02.606Z"
             },
             {
               "$type": "Document",
@@ -593,8 +573,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\OrderRepository.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T19:11:24.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T19:11:24.708Z"
             },
             {
               "$type": "Document",
@@ -606,8 +585,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\UserRepository.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAkwCsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:14:08.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:14:08.357Z"
             },
             {
               "$type": "Document",
@@ -619,8 +597,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\ProductRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAvwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:41:54.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:41:54.198Z"
             },
             {
               "$type": "Document",
@@ -632,8 +609,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\OrderService.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAuwIkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:43:09.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T18:43:09.482Z"
             },
             {
               "$type": "Document",
@@ -645,8 +621,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\CuttingListService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:52:32.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T15:52:32.711Z"
             },
             {
               "$type": "Document",
@@ -658,8 +633,7 @@
               "RelativeToolTip": "LumberShop\\libman.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-26T06:04:06.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T06:04:06.797Z"
             },
             {
               "$type": "Document",
@@ -671,8 +645,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\DimensionsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:20:15.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T19:20:15.951Z"
             },
             {
               "$type": "Document",
@@ -684,8 +657,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\DimensionsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T18:01:09.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T18:01:09.985Z"
             },
             {
               "$type": "Document",
@@ -697,8 +669,7 @@
               "RelativeToolTip": "..\\..\\.nuget\\packages\\optimization.framework\\0.3.1293\\readme.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-11-02T13:31:27.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T13:31:27.514Z"
             },
             {
               "$type": "Document",
@@ -710,8 +681,7 @@
               "RelativeToolTip": "LumberShop\\LumberStoreSystem.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-02T11:48:38.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T11:48:38.722Z"
             },
             {
               "$type": "Document",
@@ -723,8 +693,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\CuttingListItemService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:52:33.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T15:52:33.728Z"
             },
             {
               "$type": "Document",
@@ -736,8 +705,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\ClientController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwD0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:52:19.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:52:19.523Z"
             },
             {
               "$type": "Document",
@@ -749,8 +717,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\AddressService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAADwvz8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:55:02.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:55:02.874Z"
             },
             {
               "$type": "Document",
@@ -762,8 +729,7 @@
               "RelativeToolTip": "..\\..\\Downloads\\optimizer\\optimizer\\CutOpimizerUnitTests\\OptimizerTests.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T19:11:00.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T19:11:00.648Z"
             },
             {
               "$type": "Document",
@@ -775,8 +741,7 @@
               "RelativeToolTip": "LumberShop\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-22T16:38:52.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T16:38:52.377Z"
             },
             {
               "$type": "Document",
@@ -788,8 +753,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\AddressController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAIwCwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:55:00.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:55:00.971Z"
             },
             {
               "$type": "Document",
@@ -801,8 +765,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\NewCuttingListDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T16:42:41.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T16:42:41.348Z"
             },
             {
               "$type": "Document",
@@ -814,8 +777,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\NewOrderDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:35:50.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T10:35:50.777Z"
             },
             {
               "$type": "Document",
@@ -827,8 +789,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\AddressRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T17:47:55.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T17:47:55.83Z"
             },
             {
               "$type": "Document",
@@ -840,8 +801,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Interfaces\\IAddressService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T17:51:39.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T17:51:39.916Z"
             },
             {
               "$type": "Document",
@@ -853,8 +813,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:18:33.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T18:18:33.537Z"
             },
             {
               "$type": "Document",
@@ -866,8 +825,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\OrderDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:47:04.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T13:47:04.097Z"
             },
             {
               "$type": "Document",
@@ -879,8 +837,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\EmailController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:49:07.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T05:49:07.919Z"
             },
             {
               "$type": "Document",
@@ -892,8 +849,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\EmailSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:37:05.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T05:37:05.577Z"
             },
             {
               "$type": "Document",
@@ -905,8 +861,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\OrderItemController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAmwEsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T19:37:59.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T19:37:59.083Z"
             },
             {
               "$type": "Document",
@@ -918,8 +873,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Interfaces\\IOrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T14:41:35.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T14:41:35.978Z"
             },
             {
               "$type": "Document",
@@ -931,8 +885,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\CuttingListItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:51:56.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:51:56.122Z"
             },
             {
               "$type": "Document",
@@ -944,8 +897,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\CuttingListItemDTO.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAD4vxcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:50:08.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T15:50:08.083Z"
             },
             {
               "$type": "Document",
@@ -957,8 +909,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\ProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T14:30:01.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T14:30:01.022Z"
             },
             {
               "$type": "Document",
@@ -970,8 +921,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Enummerations\\EmployeeRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T20:25:27.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T20:25:27.09Z"
             },
             {
               "$type": "Document",
@@ -983,8 +933,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\ClientService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:55:07.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:55:07.712Z"
             },
             {
               "$type": "Document",
@@ -996,8 +945,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\CuttingList.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:51:39.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:51:39.581Z"
             },
             {
               "$type": "Document",
@@ -1009,8 +957,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Migrations\\20241027161954_CuttingListPrice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T16:19:54.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T16:19:54.329Z"
             },
             {
               "$type": "Document",
@@ -1022,8 +969,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\NewCuttingListItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T16:44:42.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T16:44:42.617Z"
             },
             {
               "$type": "Document",
@@ -1035,8 +981,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Address.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:50:45.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:50:45.925Z"
             },
             {
               "$type": "Document",
@@ -1048,8 +993,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Model\\Dimensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T10:22:59.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T10:22:59.915Z"
             },
             {
               "$type": "Document",
@@ -1061,8 +1005,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\CuttingListRepository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:49:02.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T15:49:02.364Z"
             },
             {
               "$type": "Document",
@@ -1074,8 +1017,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Services\\OrderItemService.cs",
               "ViewState": "AgIAABoAAAAAAAAAAADgvy4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:49:05.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T13:49:05.126Z"
             },
             {
               "$type": "Document",
@@ -1087,8 +1029,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\CuttingListItemRepository.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwBgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T11:23:16.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T11:23:16.75Z"
             },
             {
               "$type": "Document",
@@ -1100,8 +1041,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\OrderItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:40:08.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T10:40:08.527Z"
             },
             {
               "$type": "Document",
@@ -1113,8 +1053,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Interfaces\\IOrderItemService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAqwA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:48:52.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T13:48:52.032Z"
             },
             {
               "$type": "Document",
@@ -1137,8 +1076,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\NewOrderItemDTO.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:40:18.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T10:40:18.164Z"
             },
             {
               "$type": "Document",
@@ -1161,8 +1099,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Migrations\\20241022164244_InitialMigration.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAUwEQAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T16:42:45.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T16:42:45.066Z"
             },
             {
               "$type": "Document",
@@ -1174,8 +1111,7 @@
               "RelativeToolTip": "LumberStoreSystem.Contracts\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T18:47:14.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T18:47:14.061Z"
             },
             {
               "$type": "Document",
@@ -1187,8 +1123,7 @@
               "RelativeToolTip": "LumberShop.BussinessLogic\\Interfaces\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T18:48:43.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T18:48:43.176Z"
             },
             {
               "$type": "Document",
@@ -1200,8 +1135,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Interfaces\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T18:52:19.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T18:52:19.894Z"
             },
             {
               "$type": "Document",
@@ -1213,8 +1147,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Repository\\ClientRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T20:02:19.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T20:02:19.246Z"
             },
             {
               "$type": "Document",
@@ -1226,8 +1159,7 @@
               "RelativeToolTip": "LumberShop\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-22T20:55:05.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:55:05.321Z"
             },
             {
               "$type": "Document",
@@ -1239,8 +1171,7 @@
               "RelativeToolTip": "LumberShop\\Controllers\\CuttingListController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T20:55:11.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T20:55:11.323Z"
             },
             {
               "$type": "Document",
@@ -1252,8 +1183,7 @@
               "RelativeToolTip": "LumberShop\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-22T17:27:43.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T17:27:43.279Z"
             },
             {
               "$type": "Document",
@@ -1265,8 +1195,7 @@
               "RelativeToolTip": "LumberShop.DataAccess\\Interfaces\\ICuttingListItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T11:23:01.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T11:23:01.025Z"
             },
             {
               "$type": "Document",
