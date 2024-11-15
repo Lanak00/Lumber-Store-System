@@ -74,6 +74,7 @@ builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<ICuttingListItemRepository, CuttingListItemRepository>();
 builder.Services.AddScoped<ICuttingOptimizationService, CuttingOptimizationService>();
+builder.Services.AddScoped<INewCuttingOptimizationService, NewCuttingOptimizationService>();
 
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();

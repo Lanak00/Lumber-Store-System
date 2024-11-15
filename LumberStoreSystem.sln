@@ -13,6 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LumberStoreSystem.Contracts
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CutOptimizer", "..\..\Downloads\optimizer\optimizer\CutOptimizer\CutOptimizer.csproj", "{453F5DE5-967A-4088-87FE-4F411E668494}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PythonOptimizer", "PythonOptimizer", "{95A66B9B-34BC-4DD2-BEAD-F5DB27ECF007}"
+	ProjectSection(SolutionItems) = preProject
+		..\CuttingOptimizer\cutting_optimization.py = ..\CuttingOptimizer\cutting_optimization.py
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

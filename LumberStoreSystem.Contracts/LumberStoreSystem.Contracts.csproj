@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Python.Runtime.AllPlatforms" Version="3.7.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LumberShop.DataAccess\LumberStoreSystem.DataAccess.csproj" />
   </ItemGroup>
 
